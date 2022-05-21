@@ -1,0 +1,592 @@
+/*-------------------------------
+-------- Global -----------------
+-------------------------------*/
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+main {
+    margin-top: calc(100%-133.6px);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: #242424;
+    color: #fff;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 32px;
+    max-width: 200px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 4px 12px -3px rgba(0,0,0,0.75);
+    font-size: 0.8em;
+    position: absolute;
+    /* top: -55px;
+    right: 30vw; */
+}
+
+img {
+    box-shadow: 0px 4px 12px -3px rgba(0,0,0,0.75);
+}
+
+br {
+    display: none;
+}
+
+/*-------------------------------
+-------- Helpers ----------------
+-------------------------------*/
+.is-flex {
+    display: flex;
+}
+
+.closer-tgt {
+    margin-top: -8px;
+}
+
+.section-padding {
+    padding: 0 10vw;
+}
+
+/*-------------------------------
+-------- Links ------------------
+-------------------------------*/
+a {
+    text-decoration: none;
+}
+
+/*-------------------------------
+-------- Typography -------------
+-------------------------------*/
+h2 {
+    font-size: 1.42em;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+/*-------------------------------
+-------- Header/Navigation ------
+-------------------------------*/
+.header {
+    width: 100vw;
+    padding: 12px 18px;
+    background-color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-shadow: 0px 4px 22px -3px rgba(0,0,0,0.4); 
+    box-shadow: 0px 4px 22px -3px rgba(0,0,0,0.4);
+}
+
+.header .container .logo {
+    width: 180px;
+    height: 72px;
+    box-shadow: none;
+}
+
+.gn ul {
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.gn li {
+    font-weight: 600;
+}
+
+.gn a {
+    color: #242424;
+    font-size: 0.8em;
+    padding: 8px 8px;
+    text-transform: uppercase;
+}
+
+.gn .icons {
+    display: none;
+}
+
+/*-------------------------------
+-------- Banner -----------------
+-------------------------------*/
+.bnr {
+    width: 100vw;
+    height: 50vh;
+    margin-top: 180px;
+    position: relative;
+    flex-direction: column;
+    flex-grow: 1;
+    background-image: url(../images/pexels-cottonbro-6626999.jpg);
+    background-size: cover;
+}
+
+.bnr .left-col {
+    margin-top: -35px;
+    text-align: center;
+}
+
+.bnr .left-col p {
+    padding-bottom: 25px;
+}
+
+.bnr .right-col .btn {
+    top: 500px;
+    right: 30vw;
+}
+
+/*-------------------------------
+-------- Why LOCLO --------------
+-------------------------------*/
+.why-loclo {
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+    position: relative;
+    top: 80px;
+    background-image: url(../images/pexels-daria-shevtsova-1394892.jpg);
+    background-size: cover;
+    background-blend-mode: lighten;
+    padding-top: calc(459.8px + 30px);
+}
+
+.why-loclo h2 {
+    font-weight: 800;
+}
+
+.why-loclo .left-col {
+    position: absolute;
+    top: 50px;
+}
+
+.why-loclo .right-col {
+    position: absolute;
+    top: 94px;
+    padding-right: 35px;
+}
+
+.why-loclo .right-col .btn {
+    top: 310px;
+    right: 30vw;
+}
+
+/*-------------------------------
+--------- New Arrivals ----------
+-------------------------------*/
+.new-arrivals {
+    width: 100vw;
+    position: relative;
+    padding: 30vw 10vw 0vw;
+}
+
+.new-arrivals h2 {
+    text-transform: uppercase;
+    padding-bottom: 0.3em;
+    font-weight: 400;
+}
+
+.new-arrivals .new-items {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.new-arrivals .new-items li {
+    padding-bottom: 16px;
+}
+
+.new-arrivals ul li img {
+    width: 80vw;
+    height: auto;
+    margin-bottom: 0.8em;
+}
+
+.new-arrivals .btn {
+    right: 30vw;
+}
+
+/*-------------------------------
+-------- Footer -----------------
+-------------------------------*/
+.footer {
+    width: 100vw;
+    height: auto;
+    background-color: #242424;
+    color: #fff;
+    font-weight: 400;
+    padding: 24px 36px;
+    margin-top: 80px;
+    position: absolute;
+    text-align: center;
+}
+
+/*-------------------------------
+-------- Media Queries ----------
+-------------------------------*/
+@media (min-width: 320px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    /* Header/Navigation */
+    .header {
+        padding: 18px;
+    }
+
+    /* Banner */
+    .bnr {
+        margin-top: 200px;
+    }
+
+    .bnr .left-col {
+        margin-top: -40px;
+    }
+
+    /* Why LOCLO */
+    .why-loclo .right-col {
+        margin-top: 1em;
+    }
+
+    .why-loclo .right-col p {
+        font-size: 0.9em;
+    }
+
+    .why-loclo .right-col .btn {
+        top: 270px;
+        right: 30vw;
+    }
+
+    /* New Arrivals */
+    .new-arrivals ul li img {
+        width: 80vw;
+        height: auto;
+        margin-bottom: 0.8em;
+    }
+}
+
+@media (min-width: 400px) {
+    .bnr .right-col .btn {
+        right: 35vw;
+    }
+
+    .why-loclo .right-col .btn {
+        right: 30vw;
+    }
+
+    /* New Arrivals */
+    .new-arrivals {
+        padding: 24vw 10vw 0vw;
+    }
+    
+    .new-arrivals ul li img {
+        width: 70vw;
+    }
+
+    .new-arrivals .btn {
+        right: 35vw;
+    }
+}
+
+@media (min-width: 500px) {
+    .bnr .right-col .btn {
+        right: 40vw;
+    }
+
+    .why-loclo .right-col .btn {
+        right: 37vw;
+    }
+
+    /* New Arrivals */
+    .new-arrivals ul li img {
+        width: 50vw;
+    }
+
+    .new-arrivals .btn {
+        right: 40vw;
+    }
+}
+
+@media (min-width: 576px) {
+
+    h2 {
+        font-size: 2em;
+    }
+
+    /* Header/Navigation */
+    .header {
+        padding: 20px;
+    }
+
+    .header .container {
+        display: flex;
+    }
+
+    .gn {
+        margin-left: auto;
+    }
+
+    .gn ul li {
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .gn ul li a {
+        font-size: 0.8em;
+    }
+
+    .gn ul li .icons {
+        display: flex;
+        box-shadow: none;
+        width: 42px;
+        height: 40px;
+        justify-content: center;
+        box-shadow: none;
+        position: relative;
+        top: -5px;
+        left: 0;
+    }
+
+    .gn ul li img {
+        box-shadow: none;
+    }
+
+    .gn a {
+        font-size: 0.7em;
+        font-weight: 600;
+    }
+
+    /* Banner */
+    .bnr {
+        margin-top: 170px;
+    }
+
+    .bnr .left-col p {
+        padding-bottom: 18px;
+    }
+
+    .bnr .right-col {
+        height: 45vh;
+    }
+
+    /* Why LOCLO */ 
+    .why-loclo h2 {
+        font-weight: 700;
+    }
+    
+    .why-loclo .right-col {
+        margin-top: 3em;
+        font-size: 1em;
+        padding-right: 10%;
+    }
+
+    .why-loclo .right-col .btn {
+        top: 240px;
+    }
+
+    /* New Arrivals */  
+    .new-arrivals {
+        padding: 20vw 8vw 2vw;
+    }
+
+    .new-arrivals .new-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        overflow-x: auto;
+    }
+    
+    .new-arrivals .new-items li {
+        margin-right: 16px;
+    }
+
+    .new-arrivals .new-items li:even-child {
+        margin-right: 0;
+    }
+
+    .new-arrivals ul li img {
+        width: 39vw;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    br {
+        display: block;
+    }
+    
+    h2 {
+        font-size: 3em;
+        line-height: 1.35em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .col {
+        width: 50vw;
+    }
+
+    /* Header/Navigation */
+    .header {
+        padding: 10px 40px;
+    }
+
+    .header .container .logo {
+        width: 200px;
+        height: 80px;
+    }
+
+    /* Banner */
+    .bnr {
+        flex-direction: row;
+        margin-top: 100px;
+        height: 60vh;
+    }
+    
+    .bnr .left-col {
+        position: absolute;
+        top: -55px;
+    }
+
+    .bnr .left-col p {
+        position: relative;
+        top: 155px;
+        left: 120px;
+        z-index: 1;
+        color: #fff;
+        font-size: 1.1em;
+        text-align: left;
+    }
+
+    .bnr .right-col {
+        height: 65vh;
+    }
+
+    .bnr .right-col .btn {
+        top: 75px;
+        right: 7vw;
+    }
+
+    /* Why LOCLO */
+    .why-loclo {
+        top: 0;
+    }
+
+    .why-loclo .left-col {
+        top: 130px;
+    }
+
+    .why-loclo .left-col h2 {
+        font-weight: 700;
+    }
+
+    .why-loclo .right-col {
+        margin-left: 20%;
+        padding-right: 10%;
+        left: 240px;
+    }
+
+    .why-loclo .right-col .btn {
+        top: 267px;
+        right: 7vw;
+    }
+
+    /* New Arrivals */   
+    .new-arrivals {
+        padding: 50px 75px 0;
+    }
+
+    .new-arrivals h2 {
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 900px) {
+
+    /* Banner */
+    .bnr {
+        height: 70vh;
+    }
+
+    .bnr .right-col {
+        height: 70vh;
+    }
+
+    /* New Arrivals */
+    .new-arrivals ul li:third-child {
+        padding-right: 0;
+    }
+
+    .new-arrivals ul li img {
+        max-width: 22vw;
+    }
+
+    .why-loclo .right-col .btn {
+        top: 250px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* Header/Navigation */
+    .gn ul li {
+        margin-top: 15px;
+    }
+
+    .gn ul li .icons {
+        width: 45px;
+        height: 45px;
+    }
+
+    .gn a {
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+    /* New Arrivals */
+    .new-arrivals .btn {
+        right: 45vw;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* New Arrivals */  
+    .new-arrivals .new-items {
+        flex-wrap: nowrap;
+        justify-content: start;
+    }
+
+    .new-arrivals .new-items li {
+        margin-right: 0;
+        padding-right: 2em;
+        cursor: pointer;
+    }
+
+    .new-arrivals ul li img {
+        max-width: 216px;
+    }
+
+    .new-arrivals .btn {
+        right: 40vw;
+    }
+}
