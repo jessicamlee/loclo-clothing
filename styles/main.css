@@ -568,6 +568,10 @@ p {
 
 @media (min-width: 1200px) {
 
+    .btn:hover {
+        background-color: rgba(35,55,19,1);
+    }
+    
     /* New Arrivals */  
     .new-arrivals .new-items {
         flex-wrap: nowrap;
