@@ -20,7 +20,7 @@ main {
 }
 
 .btn {
-    background-color: #242424;
+    background-color: rgba(49,76,28,255);
     color: #fff;
     border-radius: 40px;
     text-transform: uppercase;
@@ -32,8 +32,6 @@ main {
     box-shadow: 0px 4px 12px -3px rgba(0,0,0,0.75);
     font-size: 0.8em;
     position: absolute;
-    /* top: -55px;
-    right: 30vw; */
 }
 
 img {
@@ -223,7 +221,7 @@ p {
 .footer {
     width: 100vw;
     height: auto;
-    background-color: #242424;
+    background-color: rgba(49,76,28,255);
     color: #fff;
     font-weight: 400;
     padding: 24px 36px;
