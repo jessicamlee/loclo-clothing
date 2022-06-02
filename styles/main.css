@@ -29,12 +29,14 @@ main {
     max-width: 200px;
     text-align: center;
     justify-content: center;
+    -webkit-box-shadow: 0px 4px 22px -3px rgba(0,0,0,0.4);
     box-shadow: 0px 4px 12px -3px rgba(0,0,0,0.75);
     font-size: 0.8em;
     position: absolute;
 }
 
 img {
+    -webkit-box-shadow: 0px 4px 22px -3px rgba(0,0,0,0.4);
     box-shadow: 0px 4px 12px -3px rgba(0,0,0,0.75);
 }
 
@@ -94,7 +96,8 @@ p {
 .header .container .logo {
     width: 180px;
     height: 72px;
-    box-shadow: none;
+    -webkit-box-shadow: 0px 4px 22px -3px rgba(0,0,0,0.4); 
+    box-shadow: 0px 4px 22px -3px rgba(0,0,0,0.4);
 }
 
 .gn ul {
@@ -351,7 +354,6 @@ p {
 
     .gn ul li .icons {
         display: flex;
-        box-shadow: none;
         width: 42px;
         height: 40px;
         justify-content: center;
