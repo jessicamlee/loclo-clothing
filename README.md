@@ -1,5 +1,5 @@
 # loclo-clothing
-LOCLO, a (fictional) e-Commerce clothing brand. An ongoing project of LOCLO's responsive website and mobile app design.
+LOCLO, a (fictional) e-Commerce clothing brand, designed and developed mobile-first for a responsive experience.
 
 Photo Credits: 
 Photo by cottonbro from Pexels
