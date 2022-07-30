@@ -144,8 +144,8 @@ p {
 }
 
 .bnr .right-col .btn {
-    top: 500px;
-    right: 30vw;
+    top: 380px;
+    right: 32vw;
 }
 
 /*-------------------------------
@@ -584,6 +584,10 @@ p {
         margin-right: 0;
         padding-right: 2em;
         cursor: pointer;
+    }
+
+    .new-arrivals .new-items li:last-child {
+        padding-right: 0;
     }
 
     .new-arrivals ul li img {
