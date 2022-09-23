@@ -2,7 +2,7 @@
 -------- Global -----------------
 -------------------------------*/
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
@@ -22,17 +22,15 @@ main {
 .btn {
     background-color: rgba(49,76,28,255);
     color: #fff;
-    border-radius: 40px;
+    border-radius: 1em;
+    padding: 12px 24px;
+    width: 7em;
     text-transform: uppercase;
-    font-weight: 600;
-    padding: 10px 32px;
-    max-width: 200px;
-    text-align: center;
-    justify-content: center;
+    font-size: 0.75em;
+    font-weight: 400;
+    text-align: center;    
     -webkit-box-shadow: 0px 4px 22px -3px rgba(0,0,0,0.4);
     box-shadow: 0px 4px 12px -3px rgba(0,0,0,0.75);
-    font-size: 0.8em;
-    position: absolute;
 }
 
 img {
@@ -51,12 +49,12 @@ br {
     display: flex;
 }
 
-.closer-tgt {
-    margin-top: -8px;
+.section-padding {
+    padding: 0em 2em;
 }
 
-.section-padding {
-    padding: 0 10vw;
+.hidden {
+    display: none;
 }
 
 /*-------------------------------
@@ -70,11 +68,7 @@ a {
 -------- Typography -------------
 -------------------------------*/
 h2 {
-    font-size: 1.42em;
-}
-
-p {
-    padding-bottom: 10px;
+    font-size: 1.7em;
 }
 
 /*-------------------------------
@@ -82,7 +76,7 @@ p {
 -------------------------------*/
 .header {
     width: 100vw;
-    padding: 12px 18px;
+    padding: 1.5em;
     background-color: #fff;
     text-align: center;
     position: fixed;
@@ -107,13 +101,13 @@ p {
     }
 
     li {
-        font-weight: 600;
+        font-weight: 500;
     }
 
     a {
         color: #242424;
-        font-size: 0.8em;
-        padding: 8px 8px;
+        font-size: 0.75em;
+        padding: 0.25em;
         text-transform: uppercase;
     }
 
@@ -127,26 +121,29 @@ p {
 -------------------------------*/
 .bnr {
     width: 100vw;
-    height: 50vh;
-    margin-top: 180px;
-    position: relative;
-    flex-direction: column;
-    flex-grow: 1;
-    background-image: url(/images/pexels-cottonbro-6626999.jpg);
-    background-size: cover;
+    height: 42vh;
+    margin: 214px auto 25px;
 
     .left-col {
-        margin-top: -35px;
+        margin: -35px auto 20px;
         text-align: center;
+
+        p {
+            font-size: 0.85em;
+        }
+
+        span {
+            font-style: italic;
+            font-weight: 700;
+        }
     }
 
-    .left-col p {
-        padding-bottom: 25px;
-    }
-
-    .right-col .btn {
-        top: 380px;
-        right: 32vw;
+    .right-col {
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
     }
 }
 
@@ -155,33 +152,26 @@ p {
 -------------------------------*/
 .why-loclo {
     width: 100vw;
-    height: auto;
-    flex-direction: column;
-    position: relative;
-    top: 80px;
+    height: 60vh;
     background-image: url(/images/pexels-daria-shevtsova-1394892.jpg);
     background-size: cover;
     background-blend-mode: lighten;
-    padding-top: calc(459.8px + 30px);
+    padding-top: 50px;
 
     h2 {
-        font-weight: 800;
-    }
-
-    .left-col {
-        position: absolute;
-        top: 50px;
+        font-weight: 600;
+        margin-bottom: 0.6em;
     }
 
     .right-col {
-        position: absolute;
-        top: 94px;
-        padding-right: 35px;
-    }
-
-    .right-col .btn {
-        top: 310px;
-        right: 30vw;
+        p {
+            font-size: 0.9em;
+            margin-bottom: 1.5em;
+            font-weight: 400;
+        }
+        .btn {
+            margin-top: 4em;
+        }
     }
 }
 
@@ -190,13 +180,14 @@ p {
 -------------------------------*/
 .new-arrivals {
     width: 100vw;
-    position: relative;
-    padding: 30vw 10vw 0vw;
+    padding-top: 4em;
 
     h2 {
         text-transform: uppercase;
-        padding-bottom: 0.3em;
+        padding-bottom: 0.5em;
         font-weight: 400;
+        font-size: 1.5em;
+        text-align: left;
     }
 
     .new-items {
@@ -205,18 +196,24 @@ p {
         flex-direction: column;
 
         li {
-            padding-bottom: 16px;
-        }
+            padding-bottom: 1.4em;
 
-        img {
-            width: 80vw;
-            height: auto;
-            margin-bottom: 0.8em;
-        }
-    }
+            img {
+                width: 100%;
+                margin-bottom: 1em;
+            }
+    
+            h3 {
+                font-weight: 400;
+                font-size: 0.9em;
+                line-height: 1em;
+            }
 
-    .btn {
-        right: 30vw;
+            p {
+                font-weight: 400;
+                font-size: 0.9em;
+            }
+        }
     }
 }
 
@@ -228,14 +225,14 @@ p {
     height: auto;
     background-color: rgba(49,76,28,255);
     color: #fff;
-    font-weight: 400;
     padding: 24px 36px;
     margin-top: 80px;
-    position: absolute;
     text-align: center;
 
     p {
         padding:0;
+        font-size: 0.9em;
+        font-weight: 400;
     }
 }
 
@@ -243,21 +240,8 @@ p {
 -------- Media Queries ----------
 -------------------------------*/
 @media (min-width: 320px) {
-
-    body {
-        font-size: 16px;
-    }
-
-    h2 {
-        font-size: 1.7em;
-    }
-
-    .header {
-        padding: 18px;
-    }
-
     .bnr {
-        margin-top: 200px;
+        margin-top: 14em;
 
         .left-col {
             margin-top: -40px;
@@ -265,6 +249,12 @@ p {
     }
 
     .why-loclo {
+        height: 50vh;
+
+        .left-col h2 {
+            margin-bottom: 0;
+        }
+
         .right-col {
             margin-top: 1em;
 
@@ -278,152 +268,92 @@ p {
             }
         }
     }
-
-    .new-arrivals ul li img {
-        width: 80vw;
-        height: auto;
-        margin-bottom: 0.8em;
-    }
-}
-
-@media (min-width: 400px) {
-    .bnr .right-col .btn {
-        right: 35vw;
-    }
-
-    .why-loclo .right-col .btn {
-        right: 30vw;
-    }
-
-    .new-arrivals {
-        padding: 24vw 10vw 0vw;
-
-        ul li img {
-            width: 70vw;
-        }
-
-        .btn {
-            right: 35vw;
-        }
-    }
-}
-
-@media (min-width: 500px) {
-    .bnr .right-col .btn {
-        right: 40vw;
-    }
-
-    .why-loclo .right-col .btn {
-        right: 37vw;
-    }
-
-    .new-arrivals {
-        ul li img {
-            width: 50vw;
-        }
-
-        .btn {
-            right: 40vw;
-        }
-    }
 }
 
 @media (min-width: 576px) {
 
-    h2 {
-        font-size: 2em;
+    .btn {
+        font-size: 0.8em;
     }
 
     .header {
-        padding: 20px;
-
         .container {
             display: flex;
         }
-    }
 
-    .gn {
-        margin-left: auto;
-
-        ul li {
-            align-items: center;
-            margin-top: 10px;
-        }
-
-        ul li a {
-            font-size: 0.8em;
-        }
+        .gn {
+            margin-left: auto;
+            align-self: center;
+    
+            ul {
+                align-items: center;
+                margin-top: 0;
+    
+                li {
+                    margin-right: 0.5em;
+    
+                    a {
+                        font-size: 0.8em;
+                        font-weight: 600;
+                    }
         
-        ul li .icons {
-            display: flex;
-            width: 42px;
-            height: 40px;
-            justify-content: center;
-            box-shadow: none;
-            position: relative;
-            top: -5px;
-            left: 0;
-        }
-
-        ul li img {
-            box-shadow: none;
-        }
-
-        a {
-            font-size: 0.7em;
-            font-weight: 600;
+                    .icons {
+                        display: flex;
+                        width: 42px;
+                        height: 40px;
+                        justify-content: center;
+                        box-shadow: none;
+                    }
+        
+                    img {
+                        box-shadow: none;
+                    }
+                }
+            }
         }
     }
 
     .bnr {
-        margin-top: 170px;
-
-        .left-col p {
-            padding-bottom: 18px;
-        }
-
-        .right-col {
-            height: 45vh;
-        }
+        margin-top: 11em;
     }
 
     .why-loclo {
+        height: 50vh;
+        padding: 50px 75px;
+        
         h2 {
             font-weight: 700;
         }
 
         .right-col {
-            margin-top: 3em;
             font-size: 1em;
-            padding-right: 10%;
-        }
 
-        .right-col .btn {
-            top: 240px;
+            .show {
+                display: block;
+            }
         }
     }
 
     .new-arrivals {
-        padding: 20vw 8vw 2vw;
-
         .new-items {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            overflow-x: auto;
-        }
+            flex-flow: row wrap;
+            justify-content: space-between;
+            column-gap: 1em;
 
-        .new-items li {
-            margin-right: 16px;
-        }
+            li {
+                img {
+                    width: 41vw;
+                    object-fit: cover;
+                }
 
-        .new-items li:even-child {
-            margin-right: 0;
-        }
+                &:nth-child(even) {
+                    margin-right: 0;
+                }
+            }
 
-        ul li img {
-            width: 39vw;
-            height: auto;
+            .show-one-product {
+                display: block;
+            }
         }
     }
 }
@@ -439,32 +369,37 @@ p {
         line-height: 1.35em;
     }
 
-    p {
-        font-size: 0.9em;
-    }
-
     .col {
         width: 50vw;
     }
 
     .header {
-        padding: 10px 40px;
+        padding: 1.5em 2em;
 
         .container .logo {
             width: 200px;
             height: 80px;
         }
+
+        .gn ul li {
+            margin-right: 1em;
+
+            a {
+                font-size: 1em;
+            }
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
     }
 
     .bnr {
+        display: flex;
         flex-direction: row;
         margin-top: 100px;
-        height: 60vh;
 
         .left-col {
-            position: absolute;
-            top: -55px;
-
             p {
                 position: relative;
                 top: 155px;
@@ -487,25 +422,24 @@ p {
     }
 
     .why-loclo {
-        top: 0;
+        height: 41vh;
 
-        .left-col {
-            top: 130px;
-
-            h2 {
-                font-weight: 700;
-            }
+        .display-flex {
+            display: flex;
         }
 
-        .right-col {
-            margin-left: 20%;
-            padding-right: 10%;
-            left: 240px;
+        .col {
+            width: 50%;
+        }
 
-            .btn {
-                top: 267px;
-                right: 7vw;
-            }
+        .left-col h2 {
+            font-weight: 700;
+            align-self: center;
+            margin-bottom: 2em;
+        }
+
+        .right-col p {
+            font-size: 1em;
         }
     }
   
@@ -513,7 +447,17 @@ p {
         padding: 50px 75px 0;
 
         h2 {
-            font-weight: 400;
+            font-size: 2em;
+        }
+
+        .new-items li {
+            img {
+                width: 38vw;
+            }
+
+            h3, p {
+                font-size: 1em;
+            }
         }
     }
 }
@@ -530,41 +474,25 @@ p {
 
     .new-arrivals {
         ul li {
-            &:third-child {
+            &:nth-child(3n+3) {
                 padding-right:0;
             }
 
             img {
-            max-width: 22vw;
+            max-width: 25vw;
             }
         }
-    }
-
-    .why-loclo .right-col .btn {
-        top: 250px;
+        
+        .hidden {
+            display: block;
+        }
     }
 }
 
 @media (min-width: 992px) {
 
-    .gn {
-        ul li {
-            margin-top: 15px;
-
-            .icons {
-                width: 45px;
-                height: 45px;
-            }
-        }
-
-        a {
-            font-size: 1em;
-            font-weight: 700;
-        }
-    }
-
-    .new-arrivals .btn {
-        right: 45vw;
+    .gn a {
+        font-weight: 700;
     }
 }
 
@@ -573,29 +501,20 @@ p {
     .btn:hover {
         background-color: rgba(35,55,19,1);
     }
+
+    .why-loclo {
+        height: 36vh;
+    }
     
     .new-arrivals {
         .new-items {
-            flex-wrap: nowrap;
-            justify-content: start;
-
-            li {
-                margin-right: 0;
-                padding-right: 2em;
-                cursor: pointer;
-
-                &:last-child {
-                    padding-right: 0;
-                }
+            li img {
+                max-width: 339px;
             }
-        }
 
-        ul li img {
-            max-width: 216px;
-        }
-    
-        .btn {
-            right: 40vw;
+            .hidden {
+                display: none;
+            }
         }
     }
 }
