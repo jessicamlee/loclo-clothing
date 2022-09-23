@@ -99,6 +99,7 @@ h2 {
 }
 .gn li {
   font-weight: 500;
+  justify-content: space-between;
 }
 .gn a {
   color: #242424;
@@ -129,7 +130,10 @@ h2 {
   font-style: italic;
   font-weight: 700;
 }
-.bnr img {
+.bnr .img-container {
+  height: 200px;
+}
+.bnr .img-container img {
   width: 100%;
   height: 400px;
   object-fit: cover;
@@ -272,6 +276,9 @@ h2 {
   .bnr {
     margin-top: 11.5em;
   }
+  .bnr .left-col p {
+    font-size: 1em;
+  }
   .why-loclo {
     height: 50vh;
     padding: 50px 75px;
@@ -330,7 +337,6 @@ h2 {
   }
   .bnr {
     margin-top: -80px;
-    margin-bottom: 6em;
   }
   .bnr .left-col p {
     position: relative;
@@ -338,12 +344,15 @@ h2 {
     left: -60px;
     z-index: 1;
     color: #fff;
-    font-size: 1.1em;
+    font-size: 0.9em;
     text-align: left;
   }
-  .bnr img {
-    width: 100%;
-    height: 70vw;
+  .bnr .img-container {
+    height: 486px;
+    overflow-y: hidden;
+  }
+  .bnr .img-container img {
+    height: 65vw;
     max-height: 716px;
   }
   .bnr .right-col .btn {
@@ -380,17 +389,9 @@ h2 {
     font-size: 1em;
   }
 }
-@media (min-width: 800px) {
-  .bnr {
-    margin-bottom: 8em;
-  }
-}
 @media (min-width: 900px) {
   .gn a {
     font-weight: 700;
-  }
-  .bnr {
-    height: 43vh;
   }
   .new-arrivals ul li:nth-child(3n+3) {
     padding-right: 0;
