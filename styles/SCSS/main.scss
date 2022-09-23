@@ -23,12 +23,12 @@ main {
     background-color: rgba(49,76,28,255);
     color: #fff;
     border-radius: 1em;
-    padding: 12px 24px;
-    width: 7em;
+    padding: 10px 20px;
+    // width: 7em;
     text-transform: uppercase;
-    font-size: 0.75em;
+    font-size: 0.8em;
     font-weight: 400;
-    text-align: center;    
+    // text-align: center;    
     -webkit-box-shadow: 0px 4px 22px -3px rgba(0,0,0,0.4);
     box-shadow: 0px 4px 12px -3px rgba(0,0,0,0.75);
 }
@@ -51,6 +51,15 @@ br {
 
 .section-padding {
     padding: 0em 2em;
+}
+
+.section-height {
+    width: 100%;
+    height: 500px;
+}
+
+.theme-wrapper {
+    overflow-x: hidden;
 }
 
 .hidden {
@@ -121,8 +130,6 @@ h2 {
 -------- Banner -----------------
 -------------------------------*/
 .bnr {
-    width: 100vw;
-    height: 42vh;
     margin: 214px auto 25px;
 
     .left-col {
@@ -154,8 +161,6 @@ h2 {
 -------- Why LOCLO --------------
 -------------------------------*/
 .why-loclo {
-    width: 100vw;
-    height: 60vh;
     background-image: url(/images/pexels-daria-shevtsova-1394892.jpg);
     background-size: cover;
     background-blend-mode: lighten;
@@ -172,9 +177,6 @@ h2 {
             margin-bottom: 1.5em;
             font-weight: 400;
         }
-        .btn {
-            margin-top: 4em;
-        }
     }
 }
 
@@ -182,7 +184,7 @@ h2 {
 --------- New Arrivals ----------
 -------------------------------*/
 .new-arrivals {
-    width: 100vw;
+    width: 100%;
     padding-top: 4em;
 
     h2 {
@@ -224,7 +226,7 @@ h2 {
 -------- Footer -----------------
 -------------------------------*/
 .footer {
-    width: 100vw;
+    width: 100%;
     height: auto;
     background-color: rgba(49,76,28,255);
     color: #fff;
@@ -248,7 +250,6 @@ h2 {
     }
 
     .why-loclo {
-        height: 50vh;
 
         .left-col h2 {
             margin-bottom: 0;
@@ -321,7 +322,7 @@ h2 {
     }
 
     .why-loclo {
-        height: 50vh;
+
         padding: 50px 75px;
         
         h2 {
@@ -431,7 +432,6 @@ h2 {
     }
 
     .why-loclo {
-        height: 41vh;
 
         .display-flex {
             display: flex;
@@ -498,10 +498,6 @@ h2 {
 
     .btn:hover {
         background-color: rgba(35,55,19,1);
-    }
-
-    .why-loclo {
-        height: 36vh;
     }
     
     .new-arrivals {
