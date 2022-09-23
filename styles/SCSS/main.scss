@@ -1,0 +1,520 @@
+/*-------------------------------
+-------- Global -----------------
+-------------------------------*/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+main {
+    margin-top: 133.6px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: rgba(49,76,28,255);
+    color: #fff;
+    border-radius: 1em;
+    padding: 12px 24px;
+    width: 7em;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: 400;
+    text-align: center;    
+    -webkit-box-shadow: 0px 4px 22px -3px rgba(0,0,0,0.4);
+    box-shadow: 0px 4px 12px -3px rgba(0,0,0,0.75);
+}
+
+img {
+    -webkit-box-shadow: 0px 4px 22px -3px rgba(0,0,0,0.4);
+    box-shadow: 0px 4px 12px -3px rgba(0,0,0,0.75);
+}
+
+br {
+    display: none;
+}
+
+/*-------------------------------
+-------- Helpers ----------------
+-------------------------------*/
+.is-flex {
+    display: flex;
+}
+
+.section-padding {
+    padding: 0em 2em;
+}
+
+.hidden {
+    display: none;
+}
+
+/*-------------------------------
+-------- Links ------------------
+-------------------------------*/
+a {
+    text-decoration: none;
+}
+
+/*-------------------------------
+-------- Typography -------------
+-------------------------------*/
+h2 {
+    font-size: 1.7em;
+}
+
+/*-------------------------------
+-------- Header/Navigation ------
+-------------------------------*/
+.header {
+    width: 100vw;
+    padding: 1.5em;
+    background-color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-shadow: 0px 4px 22px -3px rgba(0,0,0,0.4); 
+    box-shadow: 0px 4px 22px -3px rgba(0,0,0,0.4);
+
+    .container .logo {
+        width: 180px;
+        height: 72px;
+        -webkit-box-shadow: 0px 4px 22px -3px rgba(0,0,0,0.4); 
+        box-shadow: 0px 4px 22px -3px rgba(0,0,0,0.4);
+    }
+}
+
+.gn {
+    ul {
+        justify-content: center;
+        margin-top: 12px;
+    }
+
+    li {
+        font-weight: 500;
+    }
+
+    a {
+        color: #242424;
+        font-size: 0.75em;
+        padding: 0.25em;
+        text-transform: uppercase;
+    }
+
+    .icons {
+        display: none;
+    }
+}
+
+/*-------------------------------
+-------- Banner -----------------
+-------------------------------*/
+.bnr {
+    width: 100vw;
+    height: 42vh;
+    margin: 214px auto 25px;
+
+    .left-col {
+        margin: -35px auto 20px;
+        text-align: center;
+
+        p {
+            font-size: 0.85em;
+        }
+
+        span {
+            font-style: italic;
+            font-weight: 700;
+        }
+    }
+
+    .right-col {
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+}
+
+/*-------------------------------
+-------- Why LOCLO --------------
+-------------------------------*/
+.why-loclo {
+    width: 100vw;
+    height: 60vh;
+    background-image: url(/images/pexels-daria-shevtsova-1394892.jpg);
+    background-size: cover;
+    background-blend-mode: lighten;
+    padding-top: 50px;
+
+    h2 {
+        font-weight: 600;
+        margin-bottom: 0.6em;
+    }
+
+    .right-col {
+        p {
+            font-size: 0.9em;
+            margin-bottom: 1.5em;
+            font-weight: 400;
+        }
+        .btn {
+            margin-top: 4em;
+        }
+    }
+}
+
+/*-------------------------------
+--------- New Arrivals ----------
+-------------------------------*/
+.new-arrivals {
+    width: 100vw;
+    padding-top: 4em;
+
+    h2 {
+        text-transform: uppercase;
+        padding-bottom: 0.5em;
+        font-weight: 400;
+        font-size: 1.5em;
+        text-align: left;
+    }
+
+    .new-items {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        li {
+            padding-bottom: 1.4em;
+
+            img {
+                width: 100%;
+                margin-bottom: 1em;
+            }
+    
+            h3 {
+                font-weight: 400;
+                font-size: 0.9em;
+                line-height: 1em;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+/*-------------------------------
+-------- Footer -----------------
+-------------------------------*/
+.footer {
+    width: 100vw;
+    height: auto;
+    background-color: rgba(49,76,28,255);
+    color: #fff;
+    padding: 24px 36px;
+    margin-top: 80px;
+    text-align: center;
+
+    p {
+        padding:0;
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+}
+
+/*-------------------------------
+-------- Media Queries ----------
+-------------------------------*/
+@media (min-width: 320px) {
+    .bnr {
+        margin-top: 14em;
+
+        .left-col {
+            margin-top: -40px;
+        }
+    }
+
+    .why-loclo {
+        height: 50vh;
+
+        .left-col h2 {
+            margin-bottom: 0;
+        }
+
+        .right-col {
+            margin-top: 1em;
+
+            p {
+                font-size: 0.9em;
+            }
+
+            .btn {
+                top: 270px;
+                right: 30vw;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+
+    .btn {
+        font-size: 0.8em;
+    }
+
+    .header {
+        .container {
+            display: flex;
+        }
+
+        .gn {
+            margin-left: auto;
+            align-self: center;
+    
+            ul {
+                align-items: center;
+                margin-top: 0;
+    
+                li {
+                    margin-right: 0.5em;
+    
+                    a {
+                        font-size: 0.8em;
+                        font-weight: 600;
+                    }
+        
+                    .icons {
+                        display: flex;
+                        width: 42px;
+                        height: 40px;
+                        justify-content: center;
+                        box-shadow: none;
+                    }
+        
+                    img {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .bnr {
+        margin-top: 11em;
+    }
+
+    .why-loclo {
+        height: 50vh;
+        padding: 50px 75px;
+        
+        h2 {
+            font-weight: 700;
+        }
+
+        .right-col {
+            font-size: 1em;
+
+            .show {
+                display: block;
+            }
+        }
+    }
+
+    .new-arrivals {
+        .new-items {
+            flex-flow: row wrap;
+            justify-content: space-between;
+            column-gap: 1em;
+
+            li {
+                img {
+                    width: 41vw;
+                    object-fit: cover;
+                }
+
+                &:nth-child(even) {
+                    margin-right: 0;
+                }
+            }
+
+            .show-one-product {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    
+    br {
+        display: block;
+    }
+    
+    h2 {
+        font-size: 3em;
+        line-height: 1.35em;
+    }
+
+    .col {
+        width: 50vw;
+    }
+
+    .header {
+        padding: 1.5em 2em;
+
+        .container .logo {
+            width: 200px;
+            height: 80px;
+        }
+
+        .gn ul li {
+            margin-right: 1em;
+
+            a {
+                font-size: 1em;
+            }
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+
+    .bnr {
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+
+        .left-col {
+            p {
+                position: relative;
+                top: 155px;
+                left: 120px;
+                z-index: 1;
+                color: #fff;
+                font-size: 1.1em;
+                text-align: left;
+            }
+        }
+
+        .right-col {
+            height: 65vh;
+
+            .btn {
+                top: 75px;
+                right: 7vw;
+            }
+        }
+    }
+
+    .why-loclo {
+        height: 41vh;
+
+        .display-flex {
+            display: flex;
+        }
+
+        .col {
+            width: 50%;
+        }
+
+        .left-col h2 {
+            font-weight: 700;
+            align-self: center;
+            margin-bottom: 2em;
+        }
+
+        .right-col p {
+            font-size: 1em;
+        }
+    }
+  
+    .new-arrivals {
+        padding: 50px 75px 0;
+
+        h2 {
+            font-size: 2em;
+        }
+
+        .new-items li {
+            img {
+                width: 38vw;
+            }
+
+            h3, p {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+
+    .bnr {
+        height: 70vh;
+
+        .right-col {
+            height: 70vh;
+        }
+    }
+
+    .new-arrivals {
+        ul li {
+            &:nth-child(3n+3) {
+                padding-right:0;
+            }
+
+            img {
+            max-width: 25vw;
+            }
+        }
+        
+        .hidden {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+
+    .gn a {
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .btn:hover {
+        background-color: rgba(35,55,19,1);
+    }
+
+    .why-loclo {
+        height: 36vh;
+    }
+    
+    .new-arrivals {
+        .new-items {
+            li img {
+                max-width: 339px;
+            }
+
+            .hidden {
+                display: none;
+            }
+        }
+    }
+}
