@@ -113,7 +113,7 @@ h2 {
 }
 .header .gn a {
   color: rgb(36, 36, 36);
-  font-size: 0.75em;
+  font-size: 0.7em;
   font-weight: 600;
   font-style: normal;
   text-transform: uppercase;
@@ -217,19 +217,64 @@ h2 {
 -------- Footer -----------------
 -------------------------------*/
 .footer {
+  background-color: rgb(49, 76, 28);
   width: 100%;
   height: auto;
-  background-color: rgb(49, 76, 28);
-  padding: 1.5em 2.25em;
+  padding: 2.55em 2.25em;
   margin-top: 2.25em;
-  text-align: center;
 }
-.footer p {
+.footer h3 {
   color: rgb(255, 255, 255);
-  font-size: 0.9em;
+  font-size: 1.1em;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: none;
+}
+.footer .footer-nav {
+  border-bottom: 0.1em rgb(255, 255, 255) solid;
+  padding-bottom: 2em;
+  justify-content: space-evenly;
+  margin-left: auto;
+  flex-direction: column;
+  row-gap: 1.5em;
+}
+.footer .footer-nav ol li a {
+  color: rgb(255, 255, 255);
+  font-size: 1em;
   font-weight: 400;
   font-style: normal;
   text-transform: none;
+  text-align: left;
+}
+.footer .footer-nav .socials h3 {
+  color: rgb(255, 255, 255);
+  font-size: 0.9em;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: none;
+  text-decoration: none;
+  padding-top: 1em;
+}
+.footer .footer-nav .socials ol {
+  justify-content: space-between;
+}
+.footer .footer-nav .socials ol .icons {
+  display: flex;
+  width: 3.5em;
+  height: 3.5em;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  box-shadow: none;
+  fill: rgb(255, 255, 255);
+}
+.footer p {
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+  text-align: center;
+  margin-top: 2em;
 }
 
 /*-------------------------------
@@ -281,6 +326,11 @@ h2 {
   }
   .new-arrivals .new-items .show-one-product {
     display: block;
+  }
+  .footer .footer-nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 1em;
   }
 }
 @media (min-width: 600px) {

@@ -38,7 +38,6 @@ main {
     @include font($white, $sm*0.8, $normal, $base, $uppercase);
 }
 
-
 br {
     display: none;
 }
@@ -120,7 +119,7 @@ h2 {
         }
     
         a {
-            @include font($black, $sm*0.75, $semibold, $base, $uppercase);
+            @include font($black, $sm*0.7, $semibold, $base, $uppercase);
             padding: $sm*0.25;
         }
     
@@ -227,15 +226,56 @@ h2 {
 -------- Footer -----------------
 -------------------------------*/
 .footer {
+    background-color:  $forestgreen;
     width: 100%;
     height: auto;
-    background-color:  $forestgreen;
-    padding: $md $sm*2.25;
+    padding: $md*1.7 $sm*2.25;
     margin-top: $sm*2.25;
-    text-align: center;
+
+    h3 {
+        @include font($white, $sm*1.1, $semibold, $base, $none);
+    }
+    
+    .footer-nav {
+        border-bottom: $sm*0.1 $white solid;
+        padding-bottom: $sm*2;
+        justify-content: space-evenly;
+        margin-left: auto;
+        flex-direction: column;
+        row-gap: $md;
+
+        ol li a {
+            @include font($white, $sm, $normal, $base, $none);
+            text-align: left;
+        }
+
+        .socials {
+            h3 {
+                @include font($white, $sm*0.9, $normal, $italic, $none);
+                text-decoration: none;
+                padding-top: $sm;
+            }
+
+            ol {
+                justify-content: space-between;
+
+                .icons {
+                    display: flex;
+                    @include size($sm*3.5, $sm*3.5);
+                    color: $white;
+                    justify-content: center;
+                    box-shadow: none;
+                    fill: $white;
+                }
+            }
+        }
+        
+    }
 
     p {
-        @include font($white, $sm*0.9, $normal, $base, $none);
+        @include font($white, $sm, $normal, $base, $none);
+        text-align: center;
+        margin-top: $sm*2;
     }
 }
 
@@ -308,6 +348,12 @@ h2 {
                 display: block;
             }
         }
+    }
+
+    .footer .footer-nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+        column-gap: $sm;
     }
 }
 
