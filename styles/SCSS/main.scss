@@ -101,6 +101,7 @@ h2 {
 
     .container .logo {
         @include size($sm*11.25, $sm*4.5);
+        margin: 0 auto;
     }
 
     .gn {
@@ -226,7 +227,7 @@ h2 {
 -------- Footer -----------------
 -------------------------------*/
 .footer {
-    background-color:  $forestgreen;
+    background-color: $forestgreen;
     width: 100%;
     height: auto;
     padding: $md*1.7 $sm*2.25;
@@ -235,6 +236,11 @@ h2 {
     h3 {
         @include font($white, $sm*1.1, $semibold, $base, $none);
     }
+
+    a {
+        @include font($white, $sm*0.85, $normal, $base, $none);
+        text-align: left;
+    }
     
     .footer-nav {
         border-bottom: $sm*0.1 $white solid;
@@ -242,41 +248,47 @@ h2 {
         justify-content: space-evenly;
         margin-left: auto;
         flex-direction: column;
-        row-gap: $md;
+        row-gap: $lg;
 
-        ol li a {
-            @include font($white, $sm, $normal, $base, $none);
-            text-align: left;
+        .footer-links {
+            justify-content: space-evenly;
+            flex-direction: column;
+            row-gap: $md;
         }
 
         .socials {
             h3 {
-                @include font($white, $sm*0.9, $normal, $italic, $none);
+                @include font($white, $sm, $normal, $italic, $none);
                 text-decoration: none;
-                padding-top: $sm;
+                text-align: center;
             }
 
-            ol {
-                justify-content: space-between;
+            .social-accounts {
+                justify-content: center;
 
                 .icons {
                     display: flex;
-                    @include size($sm*3.5, $sm*3.5);
+                    @include size($sm*2.5, $sm*2.5);
                     color: $white;
                     justify-content: center;
                     box-shadow: none;
                     fill: $white;
+                    margin: $sm $sm 0 0;
                 }
             }
-        }
-        
+        } 
     }
 
     p {
-        @include font($white, $sm, $normal, $base, $none);
+        @include font($white, $sm*0.85, $normal, $base, $none);
         text-align: center;
         margin-top: $sm*2;
+
+        br {
+            display: block;
+        }
     }
+    
 }
 
 /*-------------------------------
@@ -298,6 +310,16 @@ h2 {
                 font-size: $sm;
             }
         }
+    }
+
+    .footer .footer-nav .footer-links {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 376px) {
+    .footer p br {
+        display: none;
     }
 }
 
@@ -350,10 +372,28 @@ h2 {
         }
     }
 
-    .footer .footer-nav {
-        flex-direction: row;
-        justify-content: space-evenly;
-        column-gap: $sm;
+    .footer {
+        .footer-nav {
+            flex-direction: row;
+            justify-content: space-evenly;
+            column-gap: $lg;
+
+            .footer-links {
+                column-gap: 3em;
+            }
+
+            .socials {
+                max-width: 25%;
+
+                h3 {
+                    padding-top: 0;
+                }
+            }
+        }
+
+        p {
+            @include font($white, $sm*0.9, $normal, $base, $none);
+        }
     }
 }
 
@@ -363,6 +403,10 @@ h2 {
 
         .container {
             display: flex;
+
+            .logo {
+                margin: auto 0;
+            }
         }
 
         .gn {
@@ -503,6 +547,10 @@ h2 {
             }
         }
     }
+
+    .footer .footer-nav .socials h3 {
+        font-size: $sm;
+    }
 }
 
 @media (min-width: 900px) {
@@ -524,6 +572,20 @@ h2 {
         
         .hidden {
             display: block;
+        }
+    }
+
+    .footer {
+        h3 {
+            font-size: $sm*1.3;
+        }
+
+        a {
+            font-size: $sm;
+        }
+
+        .footer-nav .socials h3 {
+            font-size: $sm*1.07;
         }
     }
 }
