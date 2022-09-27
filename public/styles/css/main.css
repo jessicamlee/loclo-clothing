@@ -342,9 +342,6 @@ h2 {
   .new-arrivals .new-items li:nth-child(even) {
     margin-right: 0;
   }
-  .new-arrivals .new-items .show-one-product {
-    display: block;
-  }
   .footer .footer-nav {
     flex-direction: row;
     justify-content: space-evenly;

@@ -23,12 +23,20 @@
         return PROJECT_ROOT . $path;
     }
 
+    // Returns the location on the server to a path
+    function get_project_path($path = "") {
+        if($path[0] != '/') {
+            $path = '/' . $path;
+        }
+        return PROJECT_ROOT . $path;
+    }
+
     // Return special characters as HTML entities
     function h($str) {
         return htmlspecialchars($str);
     }
 
-    // Prints out human readable data to test, and prevents the script from continuing
+    // Prints human readable data to test, and prevent the script from continuing
     function dd($data) {
         echo wrap_pre($data);
         die();
