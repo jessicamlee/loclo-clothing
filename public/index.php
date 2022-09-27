@@ -1,19 +1,20 @@
 <?php 
 
     require('../app/init.php');
+    require('../app/data/spring22.php');
 
 ?><!DOCTYPE html>
 <html lang="en-CA">
     <head>
         <?php
-            $title_text = "LOCLO &vert; living locally&period;";
-            require ('partials/global/head.php');
+            $title_text = "Spring Local 2022 &vert; LOCLO Clothing";
+            require('partials/global/head.php');
         ?>
     </head>
     <body class="theme-wrapper">
         <?php 
             $active_page = "home";
-            require ('partials/global/header.php');
+            require('partials/global/header.php');
         ?>
         <main>
             <section class="bnr container section-height" data-aos="fade-right" data-aos-delay="400">
@@ -46,43 +47,16 @@
             <section class="new-arrivals container section-padding" data-aos="fade-up" data-aos-delay="300">
                 <h2>New Arrivals</h2>
                 <ul class="new-items is-flex">
-                    <li>
-                        <img class="box-shadow" src="images/pexels-polina-tankilevitch-6945618.jpg" alt="Two women in sage silk dresses">
-                        <h3>Summer Slip Dress</h3>
-                        <p>&dollar;85&period;00</p>
-                    </li>
-                    <li>
-                        <img class="box-shadow" src="images/pexels-angela-roma-7479835.jpg" alt="Two women in black and sand hoodies">
-                        <h3>Classic Hoodie</h3>
-                        <p>&dollar;110&period;00</p>
-                    </li>
-                    <li>
-                        <img class="box-shadow" src="images/pexels-anna-shvets-4557402.jpg" alt="Two women in white tank tops">
-                        <h3>Cropped White Tee</h3>
-                        <p>&dollar;65&period;00</p>
-                    </li>
-                    <li class="hidden show-one-product">
-                        <img class="box-shadow" src="images/pexels-cottonbro-6626903.jpg" alt="Man with pullover and bucket hat">
-                        <h3>Classic Pullover</h3>
-                        <p>&dollar;95&period;00</p>
-                    </li>
-                    <li class="hidden">
-                        <img class="box-shadow" src="images/pexels-monstera-6311599.jpg" alt="Woman in round-neck tee shirt">
-                        <h3>Classic Tee</h3>
-                        <p>&dollar;60&period;00</p>
-                    </li>
-                    <li class="hidden">
-                        <img class="box-shadow" src="images/pexels-polina-kovaleva-5885670.jpg" alt="Man with pullover and bucket hat">
-                        <h3>Spring Frill Dress</h3>
-                        <p>&dollar;90&period;00</p>
-                    </li>
+                    <?php foreach($spring22collect as $spring22): ?>
+                        <?php include('partials/products/card.php'); ?>
+                    <?php endforeach; ?>
                 </ul>
                 <div class="is-flex" data-aos="fade-up" data-aos-delay="300">
                     <a class="btn box-shadow" href="#" title="Shop All">Shop All</a>
                 </div>
             </section>
         </main>
-        <?php require ('partials/global/footer.php'); ?>
+        <?php require('partials/global/footer.php'); ?>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="scripts/main.js"></script>
     </body>
