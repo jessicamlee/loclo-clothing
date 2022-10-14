@@ -10,7 +10,7 @@ body {
 }
 
 main {
-  margin-top: 11.5em;
+  margin-top: 10.4em;
 }
 
 .theme-wrapper {
@@ -104,24 +104,24 @@ h2 {
 .header .gn ul {
   justify-content: center;
   margin-top: 0.75em;
+  align-items: center;
 }
-.header .gn li {
+.header .gn ul li {
   font-weight: 500;
   justify-content: space-between;
 }
-.header .gn li :last-child {
-  margin-right: 0;
-}
-.header .gn a {
+.header .gn ul li a {
   color: rgb(36, 36, 36);
   font-size: 0.7em;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
   text-transform: uppercase;
   padding: 0.25em;
+  display: flex;
+  align-items: center;
 }
-.header .gn .icons {
-  display: none;
+.header .gn ul li a .material-symbols-outlined {
+  width: 1.5em;
 }
 
 /*-------------------------------
@@ -383,24 +383,7 @@ h2 {
     margin-top: 0;
   }
   .header .gn ul li {
-    margin-right: 0.5em;
-  }
-  .header .gn ul li:last-child {
-    margin-right: 0;
-  }
-  .header .gn ul li a {
-    color: rgb(36, 36, 36);
-    font-size: 0.8em;
-    font-weight: 600;
-    font-style: normal;
-    text-transform: uppercase;
-  }
-  .header .gn ul li .icons {
-    display: flex;
-    width: 3.5em;
-    height: 3.5em;
-    justify-content: center;
-    box-shadow: none;
+    margin-left: 0.5em;
   }
 }
 @media (min-width: 768px) {
@@ -425,7 +408,7 @@ h2 {
     height: 5em;
   }
   .header .gn ul li {
-    margin-right: 1em;
+    margin-left: 1em;
   }
   .header .gn ul li a {
     font-size: 0.9em;
@@ -486,9 +469,6 @@ h2 {
   }
 }
 @media (min-width: 900px) {
-  .header .container .gn a {
-    font-weight: 700;
-  }
   .new-arrivals ul li:nth-child(3n+3) {
     padding-right: 0;
   }
