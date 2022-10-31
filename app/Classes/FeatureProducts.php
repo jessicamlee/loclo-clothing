@@ -1,18 +1,25 @@
 <?php
 
     class FeatureProducts {
+
+        static protected $db;
         
-        public $image_url;
-        public $alt;
-        public $name;
-        public $price;
+        public $product_img;
+        public $image_alt;
+        public $product_name;
+        public $product_price;
+
+        // Set the database via function named "set_db". This line will refer to the connection defined by "$db = db_connect();" noted in functions.php.
+        static public function set_db($db) {
+            self::$db = $db;
+        }
 
         // Create the connection to pass the details from spring22.php as a $props/property in the following function.
         public function __construct($props = []) {
-            $this->image_url = $props['image_url'] ?? null;
-            $this->alt = $props['alt'] ?? null;
-            $this->name = $props['name'] ?? null;
-            if(isset($props['price'])) $this->set_price($props['price']);
+            $this->product_img = $props['product_img'] ?? null;
+            $this->image_alt = $props['image_alt'] ?? null;
+            $this->product_name = $props['product_name'] ?? null;
+            if(isset($props['product_price'])) $this->set_price($props['product_price']);
         }
 
         // For content managers if this project was put through a GUI, set_price will ensure a numeric number is inputted for consistency across all the product items.
@@ -41,5 +48,19 @@
             } catch(Exception $e) {
                 echo $e;
             }
+        }
+
+        static public function find_all() {
+            // Add SQL variable to request ALL the data, using "SELECT" and "*" for all from all the notes entries.
+            $sql = "SELECT * FROM spring22";
+
+            // Get the result for retrieving all the FeatureProducts by running the query.
+            // Use "self" to reference the class rather than the object, which is important for the static method. 
+            $result = self::$db->query($sql);
+
+            // Return the result from above
+            return $result;
+
+            // Use the above Static method in the public/index.php to display the products.
         }
     }
