@@ -99,6 +99,7 @@ h2 {
 .header .container .logo {
   width: 11.25em;
   height: 4.5em;
+  background-color: rgb(255, 255, 255);
   margin: 0 auto;
 }
 .header .gn ul {
@@ -242,15 +243,23 @@ h2 {
 .footer .footer-nav {
   border-bottom: 0.1em rgb(255, 255, 255) solid;
   padding-bottom: 2em;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-left: auto;
   flex-direction: column;
   row-gap: 2em;
 }
-.footer .footer-nav .footer-links {
-  justify-content: space-evenly;
-  flex-direction: column;
-  row-gap: 1.5em;
+.footer .footer-nav .foot-branding .foot-logo {
+  width: 11.25em;
+  height: 4.5em;
+  background-color: rgb(255, 255, 255);
+}
+.footer .footer-nav .foot-branding .slogan {
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: none;
+  margin-top: 0.8em;
 }
 .footer .footer-nav .socials h3 {
   color: rgb(255, 255, 255);
@@ -313,8 +322,11 @@ h2 {
   }
 }
 @media (min-width: 576px) {
+  main {
+    margin-top: 12.8em;
+  }
   .bnr {
-    margin: 12.5em auto 2.1875em;
+    margin: 10.5em auto 2.1875em;
   }
   .bnr .left-col p {
     font-size: 1em;
@@ -344,7 +356,6 @@ h2 {
   }
   .footer .footer-nav {
     flex-direction: row;
-    justify-content: space-evenly;
     column-gap: 2em;
   }
   .footer .footer-nav .footer-links {
@@ -365,8 +376,8 @@ h2 {
   }
 }
 @media (min-width: 600px) {
-  .header {
-    padding: 1.5em 2em;
+  main {
+    margin-top: 9.4em;
   }
   .header .container {
     display: flex;
@@ -399,9 +410,6 @@ h2 {
   }
   .btn {
     font-size: 0.9em;
-  }
-  .header {
-    padding: 1.5em 2em;
   }
   .header .container .logo {
     width: 12.5em;
