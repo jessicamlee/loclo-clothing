@@ -96,6 +96,7 @@ h2 {
 
     .container .logo {
         @include size($sm*11.25, $sm*4.5);
+        background-color: $white;
         margin: 0 auto;
     }
 
@@ -239,15 +240,22 @@ h2 {
     .footer-nav {
         border-bottom: $sm*0.1 $white solid;
         padding-bottom: $sm*2;
-        justify-content: space-evenly;
+        justify-content: space-between;
         margin-left: auto;
         flex-direction: column;
         row-gap: $lg;
 
-        .footer-links {
-            justify-content: space-evenly;
-            flex-direction: column;
-            row-gap: $md;
+        .foot-branding {
+            
+            .foot-logo {
+                @include size($sm*11.25, $sm*4.5);
+                background-color: $white;
+            }
+
+            .slogan {
+                @include font($white, $sm, $normal, $italic, $none);
+                margin-top: $sm*0.8;
+            }
         }
 
         .socials {
@@ -319,8 +327,12 @@ h2 {
 
 @media (min-width: 576px) {
 
+    main {
+        margin-top: $sm*12.8;
+    }
+
     .bnr {
-        margin: $sm*12.5 auto $sm*2.1875;
+        margin: $sm*10.5 auto $sm*2.1875;
 
         .left-col p { 
             font-size: $sm;
@@ -365,7 +377,6 @@ h2 {
     .footer {
         .footer-nav {
             flex-direction: row;
-            justify-content: space-evenly;
             column-gap: $lg;
 
             .footer-links {
@@ -388,9 +399,11 @@ h2 {
 }
 
 @media (min-width: 600px) {
-    .header {
-        padding: $md $lg;
+    main {
+        margin-top: $sm*9.4;
+    }
 
+    .header {
         .container {
             display: flex;
 
@@ -435,8 +448,6 @@ h2 {
     }
 
     .header {
-        padding: $md $lg;
-
         .container .logo {
             @include size($sm*12.5, $sm*5);
         }
