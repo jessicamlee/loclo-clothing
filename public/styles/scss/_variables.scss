@@ -1,0 +1,45 @@
+// Colors
+$white: rgb(255, 255, 255, 1);
+$black: rgba(36, 36,36, 1);
+$forestgreen: rgba(49, 76, 28, 1);
+$hovergreen: rgba(35,55,19,1);
+$boxshadow: rgba(0,0,0,0.75);
+
+// Sizes
+$xs: 0.5em;
+$sm: 1em;
+$md: 1.5em;
+$lg: 2em;
+$xl: 2.5em;
+
+// Font-Styles
+$italic: italic;
+$base: normal;
+
+// Font Weights
+$xlight: 200;
+$light: 300;
+$normal: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+// Text Transform
+$uppercase: uppercase;
+$capitalize: capitalize;
+$none: none;
+$lowercase: lowercase;
+
+// Mixins
+@mixin font($color, $size, $fontweight, $fontstyle, $texttransform) {
+    color: $color;
+    font-size: $size;
+    font-weight: $fontweight;
+    font-style: $fontstyle;
+    text-transform: $texttransform;
+}
+
+@mixin size($width,$height) {
+    width: $width;
+    height: $height;
+}

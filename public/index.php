@@ -1,7 +1,9 @@
 <?php 
 
     require('../app/init.php');
-    require('../app/data/spring22.php');
+    // require('../app/data/spring22.php');
+
+    $spring22collect = FeatureProducts::find_all();
 
 ?><!DOCTYPE html>
 <html lang="en-CA">
@@ -47,9 +49,13 @@
             <section class="new-arrivals container section-padding" data-aos="fade-up" data-aos-delay="300">
                 <h2>New Arrivals</h2>
                 <ul class="new-items is-flex">
-                    <?php foreach($spring22collect as $spring22): ?>
-                        <?php include('partials/products/card.php'); ?>
-                    <?php endforeach; ?>
+                    <?php while($spring22 = $spring22collect->fetch_assoc()): ?>
+                        <li>
+                            <img class="box-shadow" src="images/<?php echo h($spring22['product_img']); ?>" alt="<?php echo h($spring22['image_alt']); ?>">
+                            <h3><?php echo h($spring22['product_name']); ?></h3>
+                            <p>$<?php echo h($spring22['product_price']); ?></p>
+                        </li>
+                    <?php endwhile; ?>
                 </ul>
                 <div class="is-flex" data-aos="fade-up" data-aos-delay="300">
                     <a class="btn box-shadow" href="#" title="Shop All">Shop All</a>

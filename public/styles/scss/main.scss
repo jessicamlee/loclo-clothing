@@ -1,9 +1,4 @@
-@use 'color' as *;
-@use 'size' as *;
-@use 'fontweight' as *;
-@use 'fontstyle' as *;
-@use 'texttransform' as *;
-@use 'mixin' as *;
+@import '../scss/variables';
  
 /*-------------------------------
 -------- Global -----------------
@@ -17,7 +12,7 @@ body {
 }
 
 main {
-    margin-top: $sm*11.5;
+    margin-top: $sm*10.4;
 }
 
 .theme-wrapper {
@@ -108,24 +103,23 @@ h2 {
         ul {
             justify-content: center;
             margin-top: $sm*0.75;
-        }
-    
-        li {
-            font-weight: $medium;
-            justify-content: space-between;
+            align-items: center;
 
-            :last-child{
-                margin-right: 0;
+            li {
+                font-weight: $medium;
+                justify-content: space-between;
+
+                a {
+                    @include font($black, $sm*0.7, $medium, $base, $uppercase);
+                    padding: $sm*0.25;
+                    display: flex;
+                    align-items: center;
+
+                    .material-symbols-outlined {
+                        width: $sm*1.5;
+                    }
+                }
             }
-        }
-    
-        a {
-            @include font($black, $sm*0.7, $semibold, $base, $uppercase);
-            padding: $sm*0.25;
-        }
-    
-        .icons {
-            display: none;
         }
     }
 }
@@ -414,22 +408,7 @@ h2 {
                 margin-top: 0;
     
                 li {
-                    margin-right: $xs;
-
-                    &:last-child{
-                        margin-right: 0;
-                    }
-
-                    a {
-                        @include font($black, $sm*0.8, $semibold, $base, $uppercase);
-                    }
-        
-                    .icons {
-                        display: flex;
-                        @include size($sm*3.5, $sm*3.5);
-                        justify-content: center;
-                        box-shadow: none;
-                    }
+                    margin-left: $xs;
                 }
             }
         }
@@ -463,7 +442,7 @@ h2 {
         }
 
         .gn ul li {
-            margin-right: $sm;
+            margin-left: $sm;
 
             a {
                 font-size: $sm*0.9;
@@ -550,10 +529,6 @@ h2 {
 }
 
 @media (min-width: 900px) {
-
-    .header .container .gn a {
-        font-weight: 700;
-    }
 
     .new-arrivals {
         ul li {
