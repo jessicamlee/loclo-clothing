@@ -46,7 +46,7 @@
                     </div>
                 </div>
             </section>
-            <section class="new-arrivals container section-padding" data-aos="fade-up" data-aos-delay="300">
+            <section class="new-arrivals container section-padding" data-aos="fade-up">
                 <h2>New Arrivals</h2>
                 <ul class="new-items is-flex">
                     <?php while($spring22 = $spring22collect->fetch_assoc()): ?>
@@ -57,7 +57,7 @@
                         </li>
                     <?php endwhile; ?>
                 </ul>
-                <div class="is-flex" data-aos="fade-up" data-aos-delay="300">
+                <div class="is-flex" data-aos="fade-up" data-aos-delay="200">
                     <a class="btn box-shadow" href="#" title="Shop All">Shop All</a>
                 </div>
             </section>

@@ -1,27 +1,31 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-nav is-flex">
-            <div class="footer-links is-flex">
-                <div data-aos="fade-right" data-aos-delay="600">
-                    <h3>Our Collection</h3>
-                    <ol>
-                        <li><a href="#" title="Spring Local 2022 Collection">Spring Local 2022</a></li>
-                        <li><a href="#" title="Shop All">Shop All</a></li>
-                        <li><a href="#" title="Apparel">Apparel</a></li>
-                        <li><a href="#" title="Accessories">Accessories</a></li>
-                    </ol>
-                </div>
-                <div data-aos="fade-left" data-aos-delay="600">
-                    <h3>Our Brand</h3>
-                    <ol>
-                        <li><a href="#" title="About">About</a></li>
-                        <li><a href="#" title="Sustainability">Sustainability</a></li>
-                        <li><a href="#" title="Contact">Contact</a></li>
-                        <li><a href="#" title="Help">Help</a></li>
-                    </ol>
-                </div>
+            <div class="foot-branding">
+                <a class="is-flex" data-aos="fade-right" href="index.html" title="LOCLO Homepage">
+                    <svg class="foot-logo box-shadow-soft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 200" alt="LOCLO Brand Logo"><polygon points="85 121 85 67 69 67 69 134 106 134 106 121 85 121"/><path d="M175,65c-20.43,0-37,16.12-37,36s16.57,36,37,36,37-16.12,37-36S195.43,65,175,65Zm.5,55.89A20.95,20.95,0,1,1,196,100,20.73,20.73,0,0,1,175.5,120.89Z"/><polygon points="358 121 358 67 342 67 342 134 379 134 379 121 358 121"/><path d="M301,114.63a20.26,20.26,0,0,1-15.5,7.26,20.95,20.95,0,0,1,0-41.89A20.26,20.26,0,0,1,301,87.26V68.09A37.78,37.78,0,0,0,286,65c-20.43,0-37,16.12-37,36s16.57,36,37,36a37.78,37.78,0,0,0,15-3.09Z"/><path d="M448,65c-20.43,0-37,16.12-37,36s16.57,36,37,36,37-16.12,37-36S468.43,65,448,65Zm.5,55.89A20.95,20.95,0,1,1,469,100,20.73,20.73,0,0,1,448.5,120.89Z"/></svg>
+                </a>
+                <p class="slogan" data-aos="fade-right" data-aos-delay="100">Living Locally&period;</p>
             </div>
-            <div class="socials" data-aos="fade-up" data-aos-delay="900">
+            <div data-aos="fade-right" data-aos-delay="200">
+                <h3>Our Collection</h3>
+                <ol>
+                    <li><a href="#" title="Spring Local 2022 Collection">Spring Local 2022</a></li>
+                    <li><a href="#" title="Shop All">Shop All</a></li>
+                    <li><a href="#" title="Apparel">Apparel</a></li>
+                    <li><a href="#" title="Accessories">Accessories</a></li>
+                </ol>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="300">
+                <h3>Our Brand</h3>
+                <ol>
+                    <li><a href="#" title="About">About</a></li>
+                    <li><a href="#" title="Sustainability">Sustainability</a></li>
+                    <li><a href="#" title="Contact">Contact</a></li>
+                    <li><a href="#" title="Help">Help</a></li>
+                </ol>
+            </div>
+            <div class="socials" data-aos="fade-up" data-aos-delay="400">
                 <h3>Get updates on the next collection drop&excl;</h3>
                 <ol class="social-accounts is-flex">
                     <li>
