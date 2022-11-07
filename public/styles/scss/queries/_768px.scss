@@ -1,0 +1,111 @@
+@use '../utilities' as *;
+
+@media (min-width: 768px) {
+    
+    br {
+        display: block;
+    }
+    
+    h2 {
+        font-size: $md*2;
+        line-height: $sm*1.35;
+    }
+
+    .col {
+        width: 50%;
+    }
+
+    .btn {
+        font-size: $sm*0.9;
+    }
+
+    .header {
+        .container .logo {
+            @include size($sm*12.5, $sm*5);
+        }
+
+        .gn ul li {
+            margin-left: $sm;
+
+            a {
+                font-size: $sm*0.9;
+            }
+        }
+    }
+
+    .bnr {
+        margin-top: $sm*-6.875;
+
+        .left-col {
+            p {
+                position: relative;
+                top: $sm*8.125;
+                left: $sm*-3.75;
+                z-index: 1;
+                color: $white;
+                font-size: $sm;
+                text-align: left;
+            }
+        }
+
+        .img-container {
+            height: $sm*29.375;
+            overflow-y: hidden;
+
+            img {
+                height: 65vw;
+                max-height: $sm*44.75;
+            }
+        }
+
+        .right-col {
+            bottom: 85%;
+            left: 53%;
+        }
+    }
+
+    .why-loclo {
+
+        .display-flex {
+            display: flex;
+        }
+
+        .left-col h2 {
+            font-weight: 700;
+            align-self: center;
+            margin-bottom: 2em;
+            margin-left: 20%;
+        }
+
+        .right-col {
+            p {
+                font-size: 1em;
+            }
+
+            .btn {
+                margin: auto 0 auto auto;
+            }
+        }
+    }
+  
+    .new-arrivals {
+        
+        h2 {
+            font-size: $lg;
+        }
+
+        .new-items li {
+            img {
+                width: 38vw;
+            }
+
+            h3, p {
+                font-size: $sm;
+            }
+        }
+    }
+
+    .footer .footer-nav .socials h3 {
+        font-size: $sm;
+    }
+}

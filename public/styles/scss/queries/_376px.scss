@@ -1,0 +1,7 @@
+@use '../utilities' as *;
+
+@media (min-width: 376px) {
+    .footer p br {
+        display: none;
+    }
+}

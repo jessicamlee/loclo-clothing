@@ -2,7 +2,7 @@
     <div class="container">
         <div class="footer-nav is-flex">
             <div class="foot-branding">
-                <a class="is-flex foot-logo-box" data-aos="fade-right" href="index.php" title="LOCLO Homepage">
+                <a class="is-flex foot-logo-box" data-aos="fade-right" href="../index.php" title="LOCLO Homepage">
                     <svg class="foot-logo box-shadow-soft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 200" alt="LOCLO Brand Logo"><polygon points="85 121 85 67 69 67 69 134 106 134 106 121 85 121"/><path d="M175,65c-20.43,0-37,16.12-37,36s16.57,36,37,36,37-16.12,37-36S195.43,65,175,65Zm.5,55.89A20.95,20.95,0,1,1,196,100,20.73,20.73,0,0,1,175.5,120.89Z"/><polygon points="358 121 358 67 342 67 342 134 379 134 379 121 358 121"/><path d="M301,114.63a20.26,20.26,0,0,1-15.5,7.26,20.95,20.95,0,0,1,0-41.89A20.26,20.26,0,0,1,301,87.26V68.09A37.78,37.78,0,0,0,286,65c-20.43,0-37,16.12-37,36s16.57,36,37,36a37.78,37.78,0,0,0,15-3.09Z"/><path d="M448,65c-20.43,0-37,16.12-37,36s16.57,36,37,36,37-16.12,37-36S468.43,65,448,65Zm.5,55.89A20.95,20.95,0,1,1,469,100,20.73,20.73,0,0,1,448.5,120.89Z"/></svg>
                 </a>
                 <p class="slogan" data-aos="fade-right" data-aos-delay="100">Living Locally&period;</p>
@@ -10,10 +10,10 @@
             <div data-aos="fade-right" data-aos-delay="200">
                 <h3>Our Collection</h3>
                 <ol>
-                    <li><a href="pages/shopall.php" title="Spring Local 2022 Collection">Spring Local 2022</a></li>
-                    <li><a href="pages/shopall.php" title="Shop All">Shop All</a></li>
-                    <li><a href="pages/shopall.php" title="Apparel">Apparel</a></li>
-                    <li><a href="pages/shopall.php" title="Accessories">Accessories</a></li>
+                    <li><a href="#" title="Spring Local 2022 Collection">Spring Local 2022</a></li>
+                    <li><a href="#" title="Shop All">Shop All</a></li>
+                    <li><a href="#" title="Apparel">Apparel</a></li>
+                    <li><a href="#" title="Accessories">Accessories</a></li>
                 </ol>
             </div>
             <div data-aos="fade-left" data-aos-delay="300">

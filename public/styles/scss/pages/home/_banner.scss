@@ -1,0 +1,34 @@
+@use '../../utilities' as *;
+
+.bnr {
+    margin: $sm*12.5 auto $sm*1.875;
+
+    .left-col {
+        margin: $sm*-2.1875 auto $sm*1.25;
+        text-align: center;
+
+        p {
+            font-size: $sm*0.85;
+        }
+
+        span {
+            font-style: italic;
+            font-weight: 700;
+        }
+    }
+
+    .img-container {
+        height: $sm*12.5;
+
+        img {
+            width: 100%;
+            height: $sm*25;
+            object-fit: cover;
+        }
+    }
+
+    .right-col {
+        position: relative;
+        bottom: -45%;
+    }
+}
