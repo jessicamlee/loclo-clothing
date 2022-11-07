@@ -1,0 +1,20 @@
+@use '../../utilities' as *;
+
+.why-loclo {
+    background: url(../../images/pexels-daria-shevtsova-1394892.jpg);
+    padding-top: $sm*3.125;
+    width: 100%;
+    height: $sm*32;
+
+    h2 {
+        font-weight: $semibold;
+        margin-bottom: $sm*0.6;
+    }
+
+    .right-col {
+        p {
+            @include font($black, $sm*0.9, $normal, $base, $none);
+            margin-bottom: $md;
+        }
+    }
+}

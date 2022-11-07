@@ -1,0 +1,10 @@
+@use '../utilities' as *;
+
+.btn {
+    background-color: $forestgreen;
+    border-radius: $sm;
+    margin: 0 auto;
+    padding: $sm*0.625 $sm*1.25;
+    text-align: center;
+    @include font($white, $sm*0.8, $normal, $base, $uppercase);
+}

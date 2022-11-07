@@ -1,8 +1,6 @@
 <?php 
 
     require('../app/init.php');
-    // require('../app/data/spring22.php');
-
     $spring22collect = FeatureProducts::find_all();
 
 ?><!DOCTYPE html>
@@ -16,53 +14,14 @@
     <body class="theme-wrapper">
         <?php 
             $active_page = "home";
-            require('partials/global/header.php');
+            include('partials/global/header.php');
         ?>
         <main>
-            <section class="bnr container section-height" data-aos="fade-right" data-aos-delay="400">
-                <div class="left-col col" data-aos="fade-right" data-aos-delay="400">
-                    <p>Shop the Drop&colon; <br><span>Spring Local 2022</span></p>
-                </div>
-                <div class="img-container">
-                    <img src="images/pexels-cottonbro-6626999.jpg" alt="Three male models sitting together">
-                </div>
-                <div class="right-col col is-flex" data-aos="fade-up" data-aos-delay="600">
-                    <a class="btn box-shadow" href="#" title="View Spring Local Collection">View Now</a>
-                </div>
-            </section>
-            <section class="why-loclo is-flex container section-padding" data-aos="fade-left" data-aos-delay="800">
-                <div class="display-flex">
-                    <div class="left-col col is-flex" data-aos="fade-right" data-aos-delay="700">
-                        <h2>Why <br>LOCLO&quest;</h2>
-                    </div>
-                    <div class="right-col col" data-aos="fade-left" data-aos-delay="700">
-                        <p>LOCLO is&comma; as it sounds&comma; &quot;local&period;&quot;</p>
-                        <p>We want to sustainably make comfortable clothes for every body&period;</p>
-                        <p>No one wants to buy the same pair of shorts five times within a year when they can buy <b><em>one</em></b> good quality pair of shorts that will last a long time&period;</p>
-                        <p class="hidden show">There&apos;s more to our story&period; Continue reading to learn more&period;</p>
-                        <div class="is-flex" data-aos="fade-up" data-aos-delay="800">
-                            <a class="btn box-shadow" href="#" title="Learn More">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="new-arrivals container section-padding" data-aos="fade-up">
-                <h2>New Arrivals</h2>
-                <ul class="new-items is-flex">
-                    <?php while($spring22 = $spring22collect->fetch_assoc()): ?>
-                        <li>
-                            <img class="box-shadow" src="images/<?php echo h($spring22['product_img']); ?>" alt="<?php echo h($spring22['image_alt']); ?>">
-                            <h3><?php echo h($spring22['product_name']); ?></h3>
-                            <p>$<?php echo h($spring22['product_price']); ?></p>
-                        </li>
-                    <?php endwhile; ?>
-                </ul>
-                <div class="is-flex" data-aos="fade-up" data-aos-delay="200">
-                    <a class="btn box-shadow" href="#" title="Shop All">Shop All</a>
-                </div>
-            </section>
+            <?php include('partials/home/banner.php'); ?>
+            <?php include('partials/home/whyloclo.php'); ?>
+            <?php include('partials/home/newarrivals.php'); ?>
+            <?php include('partials/global/footer.php'); ?>
         </main>
-        <?php require('partials/global/footer.php'); ?>
         <script src="../node_modules/aos/dist/aos.js"></script>
         <script src="scripts/main.js"></script>
     </body>

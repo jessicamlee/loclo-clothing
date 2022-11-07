@@ -1,0 +1,20 @@
+@use '../utilities' as *;
+
+@media (min-width: 1200px) {
+
+    .btn:hover {
+        background-color: $hovergreen;
+    }
+    
+    .new-arrivals {
+        .new-items {
+            li img {
+                max-width: $sm*21.25;
+            }
+
+            .hidden {
+                display: none;
+            }
+        }
+    }
+}

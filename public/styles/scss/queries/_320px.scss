@@ -1,0 +1,24 @@
+@use '../utilities' as *;
+
+@media (min-width: 320px) {
+
+    .why-loclo {
+        height: $sm*30;
+
+        .left-col h2 {
+            margin-bottom: 0;
+        }
+
+        .right-col {
+            margin-top: $sm;
+            
+            p {
+                font-size: $sm;
+            }
+        }
+    }
+
+    .footer .footer-nav .footer-links {
+        flex-direction: row;
+    }
+}

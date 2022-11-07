@@ -1,0 +1,73 @@
+@use '../utilities' as *;
+
+@media (min-width: 576px) {
+
+    main {
+        margin-top: $sm*12.8;
+    }
+
+    .bnr {
+        margin: $sm*10.5 auto $sm*2.1875;
+
+        .left-col p { 
+            font-size: $sm;
+        }
+    }
+
+    .why-loclo {
+        padding: 50px 75px;
+        
+        h2 {
+            font-weight: 700;
+        }
+
+        .right-col {
+            font-size: 1em;
+
+            .show {
+                display: block;
+            }
+        }
+    }
+
+    .new-arrivals {
+        .new-items {
+            flex-flow: row wrap;
+            justify-content: space-between;
+
+            li {
+                img {
+                    width: 41vw;
+                    object-fit: cover;
+                }
+
+                &:nth-child(even) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer-nav {
+            flex-direction: row;
+            column-gap: $lg;
+
+            .footer-links {
+                column-gap: 3em;
+            }
+
+            .socials {
+                max-width: 25%;
+
+                h3 {
+                    padding-top: 0;
+                }
+            }
+        }
+
+        p {
+            @include font($white, $sm*0.9, $normal, $base, $none);
+        }
+    }
+}
