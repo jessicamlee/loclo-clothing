@@ -8,6 +8,7 @@
         public $image_alt;
         public $product_name;
         public $product_price;
+        public $category_id;
 
         // Set the database via function named "set_db". This line will refer to the connection defined by "$db = db_connect();" noted in functions.php.
         static public function set_db($db) {
@@ -20,6 +21,7 @@
             $this->image_alt = $props['image_alt'] ?? null;
             $this->product_name = $props['product_name'] ?? null;
             if(isset($props['product_price'])) $this->set_price($props['product_price']);
+            $this->category_id = $props['category_id'] ?? null;
         }
 
         // For content managers if this project was put through a GUI, set_price will ensure a numeric number is inputted for consistency across all the product items.

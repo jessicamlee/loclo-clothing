@@ -2,7 +2,7 @@
 
 @media (min-width: 576px) {
 
-    main {
+    .main-home {
         margin-top: $sm*12.8;
     }
 
@@ -30,7 +30,7 @@
         }
     }
 
-    .new-arrivals {
+    .new-arrivals, .feature-products {
         .new-items {
             flex-flow: row wrap;
             justify-content: space-between;

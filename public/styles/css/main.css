@@ -354,10 +354,6 @@ body {
   line-height: 1.6;
 }
 
-main {
-  margin-top: 10.4em;
-}
-
 .theme-wrapper {
   overflow-x: hidden;
 }
@@ -380,7 +376,7 @@ a {
 }
 
 .section-padding {
-  padding: 0 2.5em;
+  padding: 0 2em;
 }
 
 .section-height {
@@ -618,6 +614,96 @@ h2 {
   text-transform: none;
 }
 
+.main-home {
+  margin-top: 10.4em;
+}
+
+.filter-field {
+  margin-bottom: 1em;
+}
+.filter-field .filter-btn {
+  width: 6.5em;
+  height: auto;
+  padding: 0.5em 1em;
+  margin: 0;
+  background-color: rgb(49, 76, 28);
+  color: rgb(255, 255, 255);
+  column-gap: 0.5em;
+  cursor: pointer;
+}
+.filter-field .filter-btn p {
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.filter-field .filter-container {
+  width: 15.625em;
+  height: auto;
+  padding: 1em;
+  background-color: rgb(49, 76, 28);
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.3);
+  position: absolute;
+  transition: transform top background;
+  transition-duration: 0.5s;
+}
+.filter-field .filter-container:not(.filters--active) {
+  display: none;
+  transform: translateY(0);
+}
+.filter-field .filter-container .filter-list li {
+  user-select: none;
+  padding-bottom: 1em;
+}
+.filter-field .filter-container .filter-list li:last-child {
+  padding-bottom: 0;
+}
+.filter-field .filter-container .filter-list li input[type=checkbox] {
+  margin-right: 0.5em;
+}
+
+.feature-products {
+  width: 100%;
+  padding-top: 4em;
+}
+.feature-products .page-title {
+  padding-bottom: 1.5em;
+}
+.feature-products .page-title h2 {
+  color: rgb(36, 36, 36);
+  font-size: 1.5em;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+  padding-bottom: 0.25em;
+  text-align: left;
+}
+.feature-products .new-items {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.feature-products .new-items li {
+  padding-bottom: 1.4em;
+}
+.feature-products .new-items li img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.feature-products .new-items li h3, .feature-products .new-items li p {
+  color: rgb(36, 36, 36);
+  font-size: 0.9em;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: none;
+}
+
+.main-shopall {
+  margin-top: 7.5em;
+}
+
 @media (min-width: 320px) {
   .why-loclo {
     height: 30em;
@@ -636,12 +722,15 @@ h2 {
   }
 }
 @media (min-width: 376px) {
+  .feature-products .page-title h2 {
+    font-size: 2em;
+  }
   .footer p br {
     display: none;
   }
 }
 @media (min-width: 576px) {
-  main {
+  .main-home {
     margin-top: 12.8em;
   }
   .bnr {
@@ -662,15 +751,15 @@ h2 {
   .why-loclo .right-col .show {
     display: block;
   }
-  .new-arrivals .new-items {
+  .new-arrivals .new-items, .feature-products .new-items {
     flex-flow: row wrap;
     justify-content: space-between;
   }
-  .new-arrivals .new-items li img {
+  .new-arrivals .new-items li img, .feature-products .new-items li img {
     width: 41vw;
     object-fit: cover;
   }
-  .new-arrivals .new-items li:nth-child(even) {
+  .new-arrivals .new-items li:nth-child(even), .feature-products .new-items li:nth-child(even) {
     margin-right: 0;
   }
   .footer .footer-nav {
@@ -695,11 +784,12 @@ h2 {
   }
 }
 @media (min-width: 600px) {
-  main {
+  .main-home {
     margin-top: 9.4em;
   }
   .header .container {
     display: flex;
+    padding: 0 2.25em;
   }
   .header .container .logo {
     margin: auto 0;
@@ -714,6 +804,9 @@ h2 {
   }
   .header .gn ul li {
     margin-left: 0.5em;
+  }
+  .main-shopall {
+    margin-top: 5em;
   }
 }
 @media (min-width: 768px) {
@@ -779,27 +872,30 @@ h2 {
   .why-loclo .right-col .btn {
     margin: auto 0 auto auto;
   }
-  .new-arrivals h2 {
+  .new-arrivals h2, .feature-products h2 {
     font-size: 2em;
   }
-  .new-arrivals .new-items li img {
+  .new-arrivals .new-items li img, .feature-products .new-items li img {
     width: 38vw;
   }
-  .new-arrivals .new-items li h3, .new-arrivals .new-items li p {
+  .new-arrivals .new-items li h3, .new-arrivals .new-items li p, .feature-products .new-items li h3, .feature-products .new-items li p {
     font-size: 1em;
+  }
+  .main-shopall {
+    margin-top: 6em;
   }
   .footer .footer-nav .socials h3 {
     font-size: 1em;
   }
 }
 @media (min-width: 900px) {
-  .new-arrivals ul li:nth-child(3n+3) {
+  .new-arrivals ul li:nth-child(3n+3), .feature-products ul li:nth-child(3n+3) {
     padding-right: 0;
   }
-  .new-arrivals ul li img {
+  .new-arrivals ul li img, .feature-products ul li img {
     max-width: 25vw;
   }
-  .new-arrivals .hidden {
+  .new-arrivals .hidden, .feature-products .hidden {
     display: block;
   }
   .footer h3 {
@@ -820,10 +916,10 @@ h2 {
   .btn:hover {
     background-color: rgb(35, 55, 19);
   }
-  .new-arrivals .new-items li img {
+  .new-arrivals li img, .feature-products .new-items li img {
     max-width: 21.25em;
   }
-  .new-arrivals .new-items .hidden {
+  .new-arrivals .hidden, .feature-products .new-items .hidden {
     display: none;
   }
 }

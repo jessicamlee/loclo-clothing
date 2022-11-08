@@ -1,1 +1,7 @@
 @use '../../utilities' as *;
+
+@use 'featureproducts';
+
+.main-shopall {
+    margin-top: $sm*7.5;
+}
