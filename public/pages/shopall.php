@@ -16,7 +16,7 @@
             $active_page = "shopall";
             include('../partials/pages/header_pages.php');
         ?>
-        <main>
+        <main class="main-shopall">
             <?php include('../partials/shopall/featureproducts.php'); ?>
             <?php include('../partials/pages/footer_pages.php'); ?>
         </main>

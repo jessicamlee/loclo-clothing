@@ -6,15 +6,13 @@
         background-color: $hovergreen;
     }
     
-    .new-arrivals {
-        .new-items {
-            li img {
-                max-width: $sm*21.25;
-            }
+    .new-arrivals, .feature-products .new-items {
+        li img {
+            max-width: $sm*21.25;
+        }
 
-            .hidden {
-                display: none;
-            }
+        .hidden {
+            display: none;
         }
     }
 }

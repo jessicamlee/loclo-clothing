@@ -1,0 +1,48 @@
+@use '../../utilities' as *;
+
+.filter-field {
+    margin-bottom: $sm;
+
+    .filter-btn {
+        @include size($sm*6.5, auto);
+        padding: $sm*0.5 $sm;
+        margin: 0;
+        background-color: $forestgreen;
+        color: $white;
+        column-gap: $sm*0.5;
+        cursor: pointer;
+    
+        p {
+            @include font($white, $sm, $normal, $base, $uppercase);
+        }
+    }
+    
+    .filter-container {
+        @include size($sm*15.625, auto);
+        padding: $sm;
+        background-color: $forestgreen;
+        color: $white;
+        box-shadow: 0 0 $sm*0.5 0 $boxshadow-light;
+        position: absolute;
+        transition: transform top background;
+        transition-duration: 0.5s;
+
+        &:not(.filters--active) {
+            display: none;
+            transform: translateY(0);
+        }
+    
+        .filter-list li {
+            user-select: none;
+            padding-bottom: $sm;
+    
+            &:last-child {
+                padding-bottom: 0;
+            }
+    
+            input[type="checkbox"] {
+                margin-right: $xs;
+            }
+        }
+    }
+}

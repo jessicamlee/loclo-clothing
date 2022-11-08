@@ -88,7 +88,7 @@
         }
     }
   
-    .new-arrivals {
+    .new-arrivals, .feature-products {
         
         h2 {
             font-size: $lg;
@@ -103,6 +103,10 @@
                 font-size: $sm;
             }
         }
+    }
+
+    .main-shopall {
+        margin-top: $sm*6;
     }
 
     .footer .footer-nav .socials h3 {

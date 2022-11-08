@@ -1,13 +1,16 @@
 @use '../utilities' as *;
 
 @media (min-width: 600px) {
-    main {
+
+    .main-home {
         margin-top: $sm*9.4;
     }
 
     .header {
+        
         .container {
             display: flex;
+            padding: 0 $sm*2.25;
 
             .logo {
                 margin: auto 0;
@@ -27,5 +30,9 @@
                 }
             }
         }
+    }
+
+    .main-shopall {
+        margin-top: $sm*5;
     }
 }

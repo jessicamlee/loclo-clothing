@@ -2,7 +2,7 @@
 
 @media (min-width: 900px) {
 
-    .new-arrivals {
+    .new-arrivals, .feature-products {
         ul li {
             &:nth-child(3n+3) {
                 padding-right:0;

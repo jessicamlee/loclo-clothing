@@ -1,6 +1,11 @@
 @use '../utilities' as *;
 
 @media (min-width: 376px) {
+
+    .feature-products .page-title h2 {
+        font-size: $sm*2;
+    }
+    
     .footer p br {
         display: none;
     }
