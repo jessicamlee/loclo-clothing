@@ -1,7 +1,25 @@
 <?php 
 
     require('../../app/init.php');
-    $spring22collect = FeatureProducts::find_all();
+
+    $product_cat = $_GET['product_cat'] ?? '';
+
+    if($_GET['product_cat']) {
+
+        // If there is a value of the product_cat, then run the GET request to retrieve the data for the value.
+
+        $spring22collect = Category::find_all_by_category($product_cat);
+
+    } else {
+
+        // If there is no value of the product_cat, then run the find_all(); function.
+
+        $spring22collect = FeatureProducts::find_all();
+    }
+
+    if(isset($_POST[''])) {
+        $spring22collect = Category::find_selected_categories($product_cat);
+    }
 
 ?><!DOCTYPE html>
 <html lang="en-CA">
