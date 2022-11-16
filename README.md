@@ -16,10 +16,10 @@ _More details and updates on the way. Stay tuned!_
 ## 👖 Credits: 
 The LOCLO Clothing project is only possible given the following libraries, images, and other resources. Grateful for these works to make LOCLO Clothing's website live!
 
-### Libraries: 
+### 📚 Libraries: 
 * AOS Library (https://michalsnik.github.io/aos/)
 
-### Images:
+### 📸 Images:
 _Note: All images used in the LOCLO Clothing project were sourced from Pexels (https://www.pexels.com/)._
 * Logo by yours truly (https://jessicamlee.dev/)
 * cottonbro (https://www.pexels.com/@cottonbro/)
