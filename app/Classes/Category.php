@@ -4,8 +4,8 @@
 
         static protected $db;
         
-        public $category_id;
-        public $category;
+        public $id;
+        public $name;
 
         // Set the database via function named "set_db". This line will refer to the connection defined by "$db = db_connect();" noted in functions.php.
         static public function set_db($db) {
@@ -14,8 +14,8 @@
 
         // Create the connection to pass the details from spring22.php as a $props/property in the following function.
         public function __construct($props = []) {
-            $this->category_id = $props['category_id'] ?? null;
-            $this->category = $props['category'] ?? null;
+            $this->id = $props['id'] ?? null;
+            $this->name = $props['name'] ?? null;
         }
 
         static public function find_all() {
@@ -30,5 +30,21 @@
             return $result;
 
             // Use the above Static method in the public/index.php to display the products.
+        }
+
+        static public function find_all_by_category($cat_id) {
+            $sql = "SELECT * FROM spring22 WHERE category_id = {$cat_id}";
+ 
+            $result = self::$db->query($sql);
+
+            return $result;
+        }
+
+        static public function find_selected_categories($cat_id) {
+            $sql = "SELECT * FROM spring22 WHERE category_id = {[]}";
+
+            $result = self::$db->query($sql);
+
+            return $result;
         }
     }

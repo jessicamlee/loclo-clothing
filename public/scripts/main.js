@@ -1,9 +1,9 @@
 /* -----------------------------
 ------ AOS Library -------------
 ------------------------------ */
-AOS.init( {
-    duration: 1500
-});
+// AOS.init( {
+//     duration: 1500
+// });
 
 /* -----------------------------
 ---- Filter Btn on Shop Page ---
@@ -44,4 +44,21 @@ for (var i = 0; i < InputDeviceInfo.length; i++) {
             }
         }
     }
+}
+
+const filterBoxes = document.querySelectorAll('.js-filter-products');
+
+for (let i = 0; i < filterBoxes.length; i++) {
+    
+    filterBoxes[i].addEventListener('change', function() {
+        let values = [];
+        for (let j = 0; j < filterBoxes.length; j++) {
+            if(filterBoxes[j].checked) {
+                values.push(filterBoxes[j].value);
+            }
+        }
+        // console.log(values.join());
+
+        window.location = 'http://localhost/loclo-clothing/public/pages/shopall.php?product_cat=' + values.join();
+    })
 }

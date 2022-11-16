@@ -14,6 +14,6 @@
         <?php endwhile; ?>
     </ul>
     <div class="is-flex" data-aos="fade-up" data-aos-delay="200">
-        <a class="btn box-shadow" href="#" title="Shop All">Shop All</a>
+        <a class="btn box-shadow" href="pages/shopall.php" title="Shop All">Shop All</a>
     </div>
 </section>

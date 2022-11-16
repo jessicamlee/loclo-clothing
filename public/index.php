@@ -16,7 +16,7 @@
             $active_page = "home";
             include('partials/global/header.php');
         ?>
-        <main class="main-main">
+        <main class="main-home">
             <?php include('partials/home/banner.php'); ?>
             <?php include('partials/home/whyloclo.php'); ?>
             <?php include('partials/home/newarrivals.php'); ?>

@@ -650,7 +650,7 @@ h2 {
   transition-duration: 0.5s;
 }
 .filter-field .filter-container:not(.filters--active) {
-  display: none;
+  display: flex;
   transform: translateY(0);
 }
 .filter-field .filter-container .filter-list li {

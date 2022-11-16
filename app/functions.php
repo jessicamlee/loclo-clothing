@@ -23,6 +23,13 @@
         return PROJECT_ROOT . $path;
     }
 
+    function get_project_path($path = "") {
+        if($path[0] != '/') {
+            $path = '/' . $path;
+        }
+        return PROJECT_ROOT . $path;
+    }
+
     // Return special characters as HTML entities
     function h($str) {
         return htmlspecialchars($str);
