@@ -1,5 +1,5 @@
 # LOCLO Clothing
-LOCLO, a (fictional) e-Commerce clothing brand, designed and developed mobile-first for a responsive experience. Featuring refreshing, timeless pieces, check out LOCLO's new landing, shop, and contact pages on mobile, tablet, and desktop screens for their latest Spring Local 2022 Collection!
+LOCLO, a fictional e-Commerce clothing brand, designed and developed mobile-first for a responsive experience. Featuring refreshing, timeless pieces, check out LOCLO's new landing, shop, and contact pages on mobile, tablet, and desktop screens for their latest Spring Local 2022 Collection!
 
 For the first iteration of LOCLO Clothing's website, the project focused on creating a responsive home landing page that was designed and developed mobile-first. The lessons learned from this first phase is understanding how to optimize the file organization for both the content structure (in PHP) and stylesheet (in SASS).
 
