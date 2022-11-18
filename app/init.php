@@ -1,5 +1,6 @@
 <?php 
-    require('constants.php');
+    define('PROJECT_ROOT', dirname(__DIR__, 1));
+    require('env.php');
 
     // Include functions
     require('functions.php');

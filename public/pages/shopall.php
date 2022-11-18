@@ -13,12 +13,7 @@
     } else {
 
         // If there is no value of the product_cat, then run the find_all(); function.
-
         $spring22collect = FeatureProducts::find_all();
-    }
-
-    if(isset($_POST[''])) {
-        $spring22collect = Category::find_selected_categories($product_cat);
     }
 
 ?><!DOCTYPE html>
@@ -38,7 +33,6 @@
             <?php include('../partials/shopall/featureproducts.php'); ?>
             <?php include('../partials/pages/footer_pages.php'); ?>
         </main>
-        <script src="../../node_modules/aos/dist/aos.js"></script>
         <script src="../scripts/main.js"></script>
     </body>
 </html>
