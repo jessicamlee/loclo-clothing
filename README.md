@@ -18,6 +18,7 @@ The LOCLO Clothing project is only possible given the following libraries, image
 
 ### 📚 Libraries: 
 * AOS Library (https://michalsnik.github.io/aos/)
+* Google Material Symbols and Icons (https://fonts.google.com/icons)
 
 ### 📸 Images:
 _Note: All images used in the LOCLO Clothing project were sourced from Pexels (https://www.pexels.com/)._
