@@ -33,16 +33,10 @@
         }
 
         static public function find_all_by_category($cat_id) {
-            $sql = "SELECT * FROM spring22 WHERE category_id = {$cat_id}";
+
+            // For multiple ids selected (into an array), IN is used to retrieve more than one category id (and its items categorized with it).
+            $sql = "SELECT * FROM spring22 WHERE category_id IN ({$cat_id})";
  
-            $result = self::$db->query($sql);
-
-            return $result;
-        }
-
-        static public function find_selected_categories($cat_id) {
-            $sql = "SELECT * FROM spring22 WHERE category_id = {[]}";
-
             $result = self::$db->query($sql);
 
             return $result;

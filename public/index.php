@@ -22,7 +22,7 @@
             <?php include('partials/home/newarrivals.php'); ?>
             <?php include('partials/global/footer.php'); ?>
         </main>
-        <script src="../node_modules/aos/dist/aos.js"></script>
+        <!-- <script src="../node_modules/aos/dist/aos.js"></script> -->
         <script src="scripts/main.js"></script>
     </body>
 </html>
