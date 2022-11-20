@@ -32,7 +32,7 @@
             <?php include('../partials/shopall/featureproducts.php'); ?>
             <?php include('../partials/pages/footer_pages.php'); ?>
         </main>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="../scripts/main.js"></script>
+        <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+        <script src="../build/main.js"></script>
     </body>
 </html>
