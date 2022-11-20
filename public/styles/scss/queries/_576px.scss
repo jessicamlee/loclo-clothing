@@ -30,20 +30,18 @@
         }
     }
 
-    .new-arrivals, .feature-products {
-        .new-items {
-            flex-flow: row wrap;
-            justify-content: space-between;
+    .new-arrivals, .feature-products .new-items {
+        flex-flow: row wrap;
+        justify-content: space-between;
 
-            li {
-                img {
-                    width: 41vw;
-                    object-fit: cover;
-                }
+        li {
+            img {
+                width: 41vw;
+                object-fit: cover;
+            }
 
-                &:nth-child(even) {
-                    margin-right: 0;
-                }
+            &:nth-child(even) {
+                margin-right: 0;
             }
         }
     }

@@ -4,10 +4,9 @@
 
     $product_cat = $_GET['product_cat'] ?? '';
 
-    if($_GET['product_cat']) {
+    if($product_cat) {
 
         // If there is a value of the product_cat, then run the GET request to retrieve the data for the value.
-
         $spring22collect = Category::find_all_by_category($product_cat);
 
     } else {
@@ -33,6 +32,7 @@
             <?php include('../partials/shopall/featureproducts.php'); ?>
             <?php include('../partials/pages/footer_pages.php'); ?>
         </main>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="../scripts/main.js"></script>
     </body>
 </html>
