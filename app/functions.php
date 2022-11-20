@@ -37,7 +37,7 @@
 
     // Prints human readable data to test, and prevent the script from continuing
     function dd($data) {
-        echo '<pre>' . print_r($data) . '</pre>';
+        echo '<pre>' . print_r($data, true) . '</pre>';
         die();
     }
 

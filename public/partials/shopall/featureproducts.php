@@ -13,7 +13,4 @@
             </li>
         <?php endwhile; ?>
     </ul>
-    <div class="is-flex" data-aos="fade-up" data-aos-delay="200">
-        <a class="btn box-shadow" href="#" title="Load more clothes">Load more</a>
-    </div>
 </section>

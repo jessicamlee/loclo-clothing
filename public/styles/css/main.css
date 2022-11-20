@@ -650,7 +650,7 @@ h2 {
   transition-duration: 0.5s;
 }
 .filter-field .filter-container:not(.filters--active) {
-  display: flex;
+  display: none;
   transform: translateY(0);
 }
 .filter-field .filter-container .filter-list li {
@@ -751,15 +751,15 @@ h2 {
   .why-loclo .right-col .show {
     display: block;
   }
-  .new-arrivals .new-items, .feature-products .new-items {
+  .new-arrivals, .feature-products .new-items {
     flex-flow: row wrap;
     justify-content: space-between;
   }
-  .new-arrivals .new-items li img, .feature-products .new-items li img {
+  .new-arrivals li img, .feature-products .new-items li img {
     width: 41vw;
     object-fit: cover;
   }
-  .new-arrivals .new-items li:nth-child(even), .feature-products .new-items li:nth-child(even) {
+  .new-arrivals li:nth-child(even), .feature-products .new-items li:nth-child(even) {
     margin-right: 0;
   }
   .footer .footer-nav {

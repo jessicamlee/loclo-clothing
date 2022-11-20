@@ -28,7 +28,7 @@
         transition-duration: 0.5s;
 
         &:not(.filters--active) {
-            display: flex;
+            display: none;
             transform: translateY(0);
         }
     
