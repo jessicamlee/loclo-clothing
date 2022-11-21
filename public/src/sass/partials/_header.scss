@@ -1,0 +1,42 @@
+@use '../utilities' as *;
+
+.header {
+    width: 100vw;
+    padding: $sm $sm*0.2;
+    background-color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    .container .logo {
+        @include size($sm*11.25, $sm*4.5);
+        background-color: $white;
+        margin: 0 auto;
+    }
+
+    .gn {
+        ul {
+            justify-content: center;
+            margin-top: $sm*0.75;
+            align-items: center;
+        }
+
+        li {
+            font-weight: $medium;
+            justify-content: space-between;
+        }
+        
+        a {
+            @include font($black, $sm*0.7, $medium, $base, $uppercase);
+            padding: $sm*0.25;
+            display: flex;
+            align-items: center;
+
+            .material-symbols-outlined {
+                width: $sm*1.5;
+            }
+        }
+    }
+}

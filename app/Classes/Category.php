@@ -26,10 +26,7 @@
             // Use "self" to reference the class rather than the object, which is important for the static method. 
             $result = self::$db->query($sql);
 
-            // Return the result from above
             return $result;
-
-            // Use the above Static method in the public/index.php to display the products.
         }
 
         static public function find_all_by_category($cat_id) {

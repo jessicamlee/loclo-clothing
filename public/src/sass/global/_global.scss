@@ -1,0 +1,29 @@
+@use '../utilities' as *;
+
+@use 'helpers';
+@use 'typography';
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.theme-wrapper {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+br {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}

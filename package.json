@@ -1,0 +1,28 @@
+{
+  "name": "loclo-clothing",
+  "version": "1.0.0",
+  "description": "Featuring refreshing, timeless pieces, check out LOCLO's new landing and Shop pages on mobile, tablet, and desktop screens for their latest Spring Local 2022 Collection!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicamlee/loclo-clothing.git"
+  },
+  "author": "Jessica Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessicamlee/loclo-clothing/issues"
+  },
+  "homepage": "https://github.com/jessicamlee/loclo-clothing#readme",
+  "devDependencies": {
+    "aos": "^2.3.4",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.56.1"
+  }
+}

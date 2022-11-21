@@ -1,0 +1,8 @@
+@use '../../utilities' as *;
+
+@forward 'filter';
+@forward 'featureproducts';
+
+.main-shopall {
+    margin-top: $sm*7.5;
+}
