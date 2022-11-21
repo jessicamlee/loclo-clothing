@@ -11,10 +11,10 @@
         .container {
             display: flex;
             padding: 0 $sm*2.25;
+        }
 
-            .logo {
-                margin: auto 0;
-            }
+        .logo {
+            margin: auto 0;
         }
 
         .gn {
@@ -24,10 +24,10 @@
             ul {
                 align-items: center;
                 margin-top: 0;
-    
-                li {
-                    margin-left: $xs;
-                }
+            }
+
+            li {
+                margin-left: $xs;
             }
         }
     }

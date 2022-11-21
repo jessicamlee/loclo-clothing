@@ -1,12 +1,11 @@
 @use '../sass/plugins/plugins';
 @use '../sass/global/reset';
 @use 'utilities' as *;
+
 @use '../sass/global/global';
 @use '../sass/components/buttons';
 
 @use '../sass/partials/header';
-@use '../sass/pages/home/home';
-@use '../sass/pages/shopall/shopall';
+@use '../sass/pages/pages';
 @use '../sass/partials/footer';
-
-@use '../sass/queries/queries';
+@use '../sass/queries/queries' as *;

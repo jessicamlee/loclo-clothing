@@ -1,6 +1,7 @@
 @use '../../utilities' as *;
 
-@use 'featureproducts';
+@forward 'filter';
+@forward 'featureproducts';
 
 .main-shopall {
     margin-top: $sm*7.5;

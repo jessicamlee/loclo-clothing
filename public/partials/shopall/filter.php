@@ -13,6 +13,10 @@
                 <input id="checkbox" type="checkbox" class="js-filter-products f1" value="2" name="product_cat[] product_cats" <?php if(strpos($product_cat, '2') !== false) { echo 'checked'; } ?> />
                 <label for="f1">Dresses</label>
             </li>
+            <li>
+                <input id="checkbox" type="checkbox" class="js-filter-products f2" value="3" name="product_cat[] product_cats" <?php if(strpos($product_cat, '3') !== false) { echo 'checked'; } ?> />
+                <label for="f2">Bottoms</label>
+            </li>
         </ul>
     </div>
 </div>

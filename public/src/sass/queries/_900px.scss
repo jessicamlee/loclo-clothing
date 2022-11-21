@@ -2,14 +2,15 @@
 
 @media (min-width: 900px) {
 
-    .new-arrivals, .feature-products {
-        ul li {
+    .new-arrivals .new-items, 
+    .feature-products .feature-items {
+        li {
             &:nth-child(3n+3) {
                 padding-right:0;
             }
 
             img {
-            max-width: 25vw;
+                max-width: $sm*22.5;
             }
         }
         

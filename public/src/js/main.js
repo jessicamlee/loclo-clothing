@@ -57,7 +57,6 @@ for (let i = 0; i < filterBoxes.length; i++) {
                 values.push(filterBoxes[j].value);
             }
         }
-        // console.log(values.join());
 
         window.location = 'http://localhost/loclo-clothing/public/pages/shopall.php?product_cat=' + values.join();
     })

@@ -30,7 +30,8 @@
         }
     }
 
-    .new-arrivals, .feature-products .new-items {
+    .new-arrivals .new-items,
+    .feature-products .feature-items {
         flex-flow: row wrap;
         justify-content: space-between;
 

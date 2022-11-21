@@ -21,21 +21,21 @@
             justify-content: center;
             margin-top: $sm*0.75;
             align-items: center;
+        }
 
-            li {
-                font-weight: $medium;
-                justify-content: space-between;
+        li {
+            font-weight: $medium;
+            justify-content: space-between;
+        }
+        
+        a {
+            @include font($black, $sm*0.7, $medium, $base, $uppercase);
+            padding: $sm*0.25;
+            display: flex;
+            align-items: center;
 
-                a {
-                    @include font($black, $sm*0.7, $medium, $base, $uppercase);
-                    padding: $sm*0.25;
-                    display: flex;
-                    align-items: center;
-
-                    .material-symbols-outlined {
-                        width: $sm*1.5;
-                    }
-                }
+            .material-symbols-outlined {
+                width: $sm*1.5;
             }
         }
     }

@@ -19,7 +19,7 @@
 <html lang="en-CA">
     <head>
         <?php
-            $title_text = "Shop the Latest &vert; LOCLO Clothing";
+            $title_text = "Shop Spring Local 2022 &vert; LOCLO Clothing";
             require('../partials/pages/head_pages.php');
         ?>
     </head>
@@ -32,7 +32,6 @@
             <?php include('../partials/shopall/featureproducts.php'); ?>
             <?php include('../partials/pages/footer_pages.php'); ?>
         </main>
-        <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-        <script src="../build/main.js"></script>
+        <script src="../build/js/main.js"></script>
     </body>
 </html>

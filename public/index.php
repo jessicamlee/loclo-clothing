@@ -22,7 +22,6 @@
             <?php include('partials/home/newarrivals.php'); ?>
             <?php include('partials/global/footer.php'); ?>
         </main>
-        <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
         <script src="build/js/main.js"></script>
     </body>
 </html>

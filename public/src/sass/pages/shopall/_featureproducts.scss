@@ -1,37 +1,35 @@
 @use '../../utilities' as *;
 
-@use 'filter';
-
 .feature-products {
     width: 100%;
     padding-top: $lg*2;
 
     .page-title {
         padding-bottom: $sm*1.5;
-
-        h2 {
-            @include font($black, $md, $normal, $base, $none);
-            padding-bottom: $sm*0.25;
-            text-align: left;
-        }
     }
 
-    .new-items {
+    h2 {
+        @include font($black, $md, $normal, $base, $none);
+        padding-bottom: $sm*0.25;
+        text-align: left;
+    }
+
+    .feature-items {
         align-items: center;
         justify-content: center;
         flex-direction: column;
 
         li {
             padding-bottom: $sm*1.4;
+        }
 
-            img {
-                width: 100%;
-                margin-bottom: $sm;
-            }
-    
-            h3, p {
-                @include font($black, $sm*0.9, $medium, $base, $none);
-            }
+        img {
+            width: 100%;
+            margin-bottom: $sm;
+        }
+
+        h3, p {
+            @include font($black, $sm*0.9, $medium, $base, $none);
         }
     }
 }

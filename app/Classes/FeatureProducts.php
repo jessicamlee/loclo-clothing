@@ -65,4 +65,10 @@
 
             // Use the above Static method in the public/index.php to display the products.
         }
+
+        static public function find_some() {
+            $sql = "SELECT * FROM spring22 LIMIT 6";
+            $result = self::$db->query($sql);
+            return $result;
+        }
     }
