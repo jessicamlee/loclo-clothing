@@ -7,11 +7,12 @@ The second and current iteration in progress is adding and implementing a filter
 
 _More details and updates on the way. Stay tuned!_
 
-## 👕 Tools & Languages: 
+## 👕 Languages & Tools: 
 * PHP
 * MySQL
-* HTML5
 * SASS
+* HTML5
+* Gulp.js
 
 ## 👖 Credits: 
 The LOCLO Clothing project is only possible given the following libraries, images, and other resources. Grateful for these works to make LOCLO Clothing's website live!
