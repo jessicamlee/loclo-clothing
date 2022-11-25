@@ -26,16 +26,32 @@
             // Use "self" to reference the class rather than the object, which is important for the static method. 
             $result = self::$db->query($sql);
 
+            // Return the result from above
             return $result;
         }
 
         static public function find_all_by_category($cat_id) {
 
             // For multiple ids selected (into an array), IN is used to retrieve more than one category id (and its items categorized with it).
-            $sql = "SELECT * FROM spring22 WHERE category_id IN ({$cat_id})";
+            $sql = "SELECT * FROM spring22 WHERE category_id IN (?)";
  
-            $result = self::$db->query($sql);
+            // $result = self::$db->query($sql);
 
+            // Prepare the variables to be passed through the parameters.
+            $stmt = self::$db->prepare($sql);
+
+            // Bind the parameters to protect table
+            $stmt->bind_param("s", 
+                $cat_id
+            );
+
+            // Execute the statement above
+            $stmt->execute();
+
+            // Return the result through the $stmt variable
+            $result = $stmt->get_result();
+
+            // Return the result from above
             return $result;
         }
     }
