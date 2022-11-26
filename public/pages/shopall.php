@@ -23,15 +23,17 @@
             require('../partials/pages/head_pages.php');
         ?>
     </head>
-    <body class="theme-wrapper">
-        <?php 
-            $active_page = "shopall";
-            include('../partials/pages/header_pages.php');
-        ?>
-        <main class="main-shopall">
-            <?php include('../partials/shopall/featureproducts.php'); ?>
-            <?php include('../partials/pages/footer_pages.php'); ?>
-        </main>
+    <body>
+        <div class="theme-wrapper">
+            <?php 
+                $active_page = "shopall";
+                include('../partials/pages/header_pages.php');
+            ?>
+            <main class="main-shopall">
+                <?php include('../partials/shopall/featureproducts.php'); ?>
+                <?php include('../partials/pages/footer_pages.php'); ?>
+            </main>
+        </div>
         <script src="../build/js/main.js"></script>
     </body>
 </html>
