@@ -11,17 +11,19 @@
             require('partials/global/head.php');
         ?>
     </head>
-    <body class="theme-wrapper">
-        <?php 
-            $active_page = "home";
-            include('partials/global/header.php');
-        ?>
-        <main class="main-home">
-            <?php include('partials/home/banner.php'); ?>
-            <?php include('partials/home/whyloclo.php'); ?>
-            <?php include('partials/home/newarrivals.php'); ?>
-            <?php include('partials/global/footer.php'); ?>
-        </main>
+    <body>
+        <div class="theme-wrapper">
+            <?php 
+                $active_page = "home";
+                include('partials/global/header.php');
+            ?>
+            <main class="main-home">
+                <?php include('partials/home/banner.php'); ?>
+                <?php include('partials/home/whyloclo.php'); ?>
+                <?php include('partials/home/newarrivals.php'); ?>
+                <?php include('partials/global/footer.php'); ?>
+            </main>
+        </div>
         <script src="build/js/main.js"></script>
     </body>
 </html>

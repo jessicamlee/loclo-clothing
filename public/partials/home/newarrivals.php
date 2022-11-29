@@ -1,6 +1,6 @@
 <?php 
 
-    $spring22collect = FeatureProducts::find_some();
+    $spring22collect = FeatureProducts::find_all(['limit'=> 6]);
 
 ?><section class="new-arrivals container section-padding" data-aos="fade-up">
     <h2>New Arrivals</h2>

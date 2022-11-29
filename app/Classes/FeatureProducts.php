@@ -52,23 +52,20 @@
             }
         }
 
-        static public function find_all() {
+        static public function find_all($args = []) {
+            
+            // Add variable to define if a the array limit exists on the page it's called upon, to limit the results from the find_all function
+            $limit_str = (array_key_exists('limit', $args)) ? " LIMIT {$args['limit']} ": "";
+
             // Add SQL variable to request ALL the data, using "SELECT" and "*" for all from all the notes entries.
             $sql = "SELECT * FROM spring22";
+            $sql .= $limit_str;
 
             // Get the result for retrieving all the FeatureProducts by running the query.
             // Use "self" to reference the class rather than the object, which is important for the static method. 
             $result = self::$db->query($sql);
-
-            // Return the result from above
             return $result;
 
             // Use the above Static method in the public/index.php to display the products.
-        }
-
-        static public function find_some() {
-            $sql = "SELECT * FROM spring22 LIMIT 6";
-            $result = self::$db->query($sql);
-            return $result;
         }
     }
