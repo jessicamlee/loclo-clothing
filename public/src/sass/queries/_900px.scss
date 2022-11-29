@@ -4,14 +4,12 @@
 
     .new-arrivals .new-items, 
     .feature-products .feature-items {
-        li {
-            &:nth-child(3n+3) {
-                padding-right:0;
-            }
+        li:nth-child(3n+3) {
+            padding-right:0;
+        }
 
-            img {
-                max-width: $sm*22.5;
-            }
+        img {
+            max-width: $sm*22.5;
         }
         
         .hidden {
