@@ -3,18 +3,30 @@ LOCLO, a fictional e-Commerce clothing brand, designed and developed mobile-firs
 
 For the first iteration of LOCLO Clothing's website, the project focused on creating a responsive home landing page that was designed and developed mobile-first. The lessons learned from this first phase is understanding how to optimize the file organization for both the content structure (in PHP) and stylesheet (in SASS).
 
-The second and current iteration in progress is adding and implementing a filter function on a new Shop page to accelerate a user's experience while giving me (as the developer) an opportunity to learn more about writing in PHP.
+The second iteration is adding and implementing a filter function on a new and responsive Shop page. Starting with one filter function, multiple filter options are intended to be added to accelerate a user's experience while giving me (as the developer) an opportunity to learn more about writing in PHP.
 
-_More details and updates on the way. Stay tuned!_
+## 📝 Latest Updates
+Here is an overview of the latest updates on the LOCLO Clothing responsive e-Commerce website!
 
-## 👕 Languages & Tools: 
-* PHP
-* MySQL
+### ✨ Iteration #2:
+* 29 Nov 2022 — On the Shop Page, you can now add multiple filters to sort the Spring Local 2022 collection by Category.
+* 20 Nov 2022 — Add Shop page and Gulp.js setup for assembling and minimizing stylesheet and script files automatically.
+
+### 🎉 Iteration #1:
+* 02 Nov 2022 — Translated CSS3 styles to SASS for efficiency and cleaner workflow between pages.
+* 26 Sep 2022 — Translated Home Landing page from HTML5 to PHP for efficiency and cleaner workflow.
+* 29 Jul 2022 — Home Landing page is now responsive in HTML5 and CSS3.
+* 26 May 2022 — Initial setup of project.
+
+_More updates on the way. Stay tuned!_
+
+## 🔧 Languages & Tools
+* PHP & MySQL
 * SASS
-* HTML5
+* HTML5 & CSS3
 * Gulp.js
 
-## 👖 Credits: 
+## 👏🏻 A round of applause to...
 The LOCLO Clothing project is only possible given the following libraries, images, and other resources. Grateful for these works to make LOCLO Clothing's website live!
 
 ### 📚 Libraries: 
