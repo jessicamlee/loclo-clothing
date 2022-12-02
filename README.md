@@ -30,20 +30,9 @@ _More updates on the way. Stay tuned!_
 The LOCLO Clothing project is only possible given the following libraries, images, and other resources. Grateful for these works to make LOCLO Clothing's website live!
 
 ### 📚 Libraries: 
-* AOS Library (https://michalsnik.github.io/aos/)
-* Google Material Symbols and Icons (https://fonts.google.com/icons)
+* [AOS Library](https://michalsnik.github.io/aos/)
+* [Google Material Symbols and Icons](https://fonts.google.com/icons)
 
 ### 📸 Images:
-_Note: All images used in the LOCLO Clothing project were sourced from Pexels (https://www.pexels.com/)._
-* Logo by yours truly (https://jessicamlee.dev/)
-* cottonbro (https://www.pexels.com/@cottonbro/)
-* Polina Tankilevitch (https://www.pexels.com/@polina-tankilevitch/)
-* Anna Shvets (https://www.pexels.com/@shvetsa/)
-* Monstera (https://www.pexels.com/@gabby-k/)
-* Angela Roma (https://www.pexels.com/@angela-roma/)
-* Tima Miroshnichenko (https://www.pexels.com/@tima-miroshnichenko/)
-* Nataliya Vaitkevich (https://www.pexels.com/@n-voitkevich/)
-* Bernice Lew (https://www.pexels.com/@bernice-lew-231599321/)
-* Polina Kovaleva (https://www.pexels.com/@polina-kovaleva/)
-* Arina Krasnikova (https://www.pexels.com/@arina-krasnikova/)
-* Daria Shevtsova (https://www.pexels.com/collections/daria-shevtsova-photo-pack-6htjydz/)
+_Note: All images used in the LOCLO Clothing project were sourced from [Pexels](https://www.pexels.com/)._\
+[Logo by yours truly](https://jessicamlee.dev/), [cottonbro](https://www.pexels.com/@cottonbro/), [Polina Tankilevitch](https://www.pexels.com/@polina-tankilevitch/), [Anna Shvets](https://www.pexels.com/@shvetsa/), [Monstera](https://www.pexels.com/@gabby-k/), [Angela Roma](https://www.pexels.com/@angela-roma/), [Tima Miroshnichenko](https://www.pexels.com/@tima-miroshnichenko/), [Nataliya Vaitkevich](https://www.pexels.com/@n-voitkevich/), [Bernice Lew](https://www.pexels.com/@bernice-lew-231599321/), [Polina Kovaleva](https://www.pexels.com/@polina-kovaleva/), [Arina Krasnikova](https://www.pexels.com/@arina-krasnikova/), [Daria Shevtsova](https://www.pexels.com/collections/daria-shevtsova-photo-pack-6htjydz/)
